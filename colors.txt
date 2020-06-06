@@ -1,0 +1,7 @@
+#f57b51 - orange
+#fff - white
+#f8f9f8 - gray (blocks)
+#dee0e0 - gray (text)
+#78d389 - green (icon)
+#d375a0 - pink (icon)
+#a6a8aa - secondary text gray

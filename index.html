@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opportunity hacker</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="icon" href="assets/pics/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    </head>
+    <body>
+        
+        <div class="topnav" id="myTopnav">
+            
+            <a href="#"><img src="assets/pics/logo-w.png" id="logo-nav" /></a>
+            <a href="#" class="active">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Discussion</a>
+            <a href="#">Settings</a>
+            <a href="#p">My profile</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        
+        <div class="row" style="width: 100%; margin: 0px; padding:0px 5px;">
+                    
+            <div class="col-sm-12" id="main-col">
+                
+                <div class="row">
+                    <div class="col-sm-9" id="stories-col" style="margin-top: 10px;">
+                        <h5><strong>Streaming </strong> now
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                        </h5>
+                        
+                        <div id="stories-container" class="container-no-bar">
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                        </div>  
+
+                    </div> 
+
+                    <div class="col-sm-3" id="search-col" style="margin-top: 10px;">
+                        <h5><strong>Advanced </strong> search
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                            <form action="#" id="search-form">
+                                <input type="text" placeholder="Start typing something" id="search-input"/>
+                                <button type="submit" id="search-submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </h5>
+
+                    </div>                    
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-sm-9" style="padding: 7px;" id="popular-col">
+                        <h5><strong>Popular </strong> now
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                        </h5>
+
+                        <div id="popular-container" class="container-no-bar">
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-1">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/6.png" />
+                                    </div>
+                                    <h5>Elon Musk</h5>
+                                    <p>@musk</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-1">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/6.png" />
+                                    </div>
+                                    <h5>Elon Musk</h5>
+                                    <p>@musk</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-1">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/6.png" />
+                                    </div>
+                                    <h5>Elon Musk</h5>
+                                    <p>@musk</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-1">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/6.png" />
+                                    </div>
+                                    <h5>Elon Musk</h5>
+                                    <p>@musk</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-1">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/6.png" />
+                                    </div>
+                                    <h5>Elon Musk</h5>
+                                    <p>@musk</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#">
+                                <div class="popular" id="pop-2" style="background-color: rgba(80, 255, 133, 0.363);">5</div>
+                            </a>
+                        </div>  
+
+                    </div>
+
+
+                    <div class="col-sm-3" style="padding: 7px;" id="personal-col">
+                        <h5><strong>Special </strong> for you
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                        </h5>
+                            <div id="container-personal">
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Elon Musk</h6>
+                                        <p>@musk</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Elon Musk</h6>
+                                        <p>@musk</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Elon Musk</h6>
+                                        <p>@musk</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Elon Musk</h6>
+                                        <p>@musk</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Elon Musk</h6>
+                                        <p>@musk</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" style="background-color: rgb(153, 98, 255);">
+                                        6
+                                    </div>
+                                </a>
+                            </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    
+                    <div class="col-sm-9" style="padding: 7px;" id="tutors-col">
+                        <h5><strong>Top </strong> tutors
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                        </h5>
+                        
+                        <div class="row" style="width: 100%; margin: 0px; padding: 0px;">
+                            
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="row" style="width: 100%; margin: 0px; padding: 0px;">
+                            
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                            <div class="col-sm-4" style="padding: 0px;">
+                                <a href="#" style="text-decoration:none; color: inherit;">
+                                    <div class="tutor">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        
+                                        <label class="tutor-checkbox" style="float: right;">
+                                            <input type="checkbox" />
+                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
+                                            <i class="fas fa-check checked"></i>
+                                        </label>
+
+                                        <h6>Steve Jobs</h6>
+                                        <p>@jobsie</p>
+                                        
+                                    </div>                                
+                                </a>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3" style="padding: 7px;" id="social-col">
+                        <h5><strong>Follow </strong> us
+                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                        </h5>
+                        <ul id="social-media-ul">
+                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-instagram"></i> Instagram: <span>@op.hacker</span></a></li>
+                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-telegram-plane"></i> Telegram: <span>@opHacker</span></a></li>
+                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-twitter"></i> Twitter: <span>@opHacker</span></a></li>
+                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-facebook-f"></i> Facebook: <span>@op-hacker</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+    
+    </body>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</html>

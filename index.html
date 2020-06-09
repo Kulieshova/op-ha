@@ -25,12 +25,12 @@
         
         <div class="topnav" id="myTopnav">
             
-            <a href="#"><img src="assets/pics/logo-w.png" id="logo-nav" /></a>
-            <a href="#" class="active">Home</a>
-            <a href="#">Discover</a>
-            <a href="#">Discussion</a>
-            <a href="#">Settings</a>
-            <a href="#p">My profile</a>
+            <a href="index.html"><img src="assets/pics/logo-w.png" id="logo-nav" /></a>
+            <a href="#" class="active" style="text-decoration: none; color: white;"><ion-icon name="home" style="margin-bottom: -1px;"></ion-icon> Home</a>
+            <a href="explore.html" style="text-decoration: none; color: white;"><ion-icon name="search" style="margin-bottom: -2px;"></ion-icon> Explore</a>
+            <a href="#" style="text-decoration: none; color: white;"><ion-icon name="mail-unread" style="margin-bottom: -2px;"></ion-icon> Discussion</a>
+            <a href="#" style="text-decoration: none; color: white;"><ion-icon name="settings"  style="margin-bottom: -2px;"></ion-icon> Settings</a>
+            <a href="#" style="text-decoration: none; color: white;"><ion-icon name="person" style="margin-bottom: -2px;"></ion-icon> My profile</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -43,7 +43,8 @@
                 <div class="row">
                     <div class="col-sm-9" id="stories-col" style="margin-top: 10px;">
                         <h5><strong>Streaming </strong> now
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                            <a href="#" style="float: right;" onclick="reportMenu()" class="dropmenu"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
+                            
                         </h5>
                         
                         <div id="stories-container" class="container-no-bar">
@@ -57,6 +58,16 @@
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
+                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
                             <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
@@ -108,11 +119,50 @@
                             </a>
 
                             <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-1">
+                                <div class="popular" id="pop-2">
                                     <div class="tutor-pic">
-                                        <img src="assets/pics/users/6.png" />
+                                        <img src="assets/pics/users/8.png" />
                                     </div>
-                                    <h5>Elon Musk</h5>
+                                    <h5>Steve Jobs</h5>
+                                    <p>@stevie</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-3">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/2.jpg" />
+                                    </div>
+                                    <h5>Greta Thunberg</h5>
+                                    <p>@greta</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-4">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/10.jpg" />
+                                    </div>
+                                    <h5>Mark Zuckerberg</h5>
+                                    <p>@zuck</p>
+                                    <div class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" style="text-decoration:none; color: inherit;">
+                                <div class="popular" id="pop-5">
+                                    <div class="tutor-pic">
+                                        <img src="assets/pics/users/4.jpg" />
+                                    </div>
+                                    <h5>Joan K. Rowling</h5>
                                     <p>@musk</p>
                                     <div class="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
@@ -121,46 +171,20 @@
                             </a>
 
                             <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-1">
+                                <div class="popular" id="pop-6">
                                     <div class="tutor-pic">
-                                        <img src="assets/pics/users/6.png" />
+                                        <img src="assets/pics/users/11.jpg" />
                                     </div>
-                                    <h5>Elon Musk</h5>
-                                    <p>@musk</p>
+                                    <h5>Andy Grove</h5>
+                                    <p>@andy</p>
                                     <div class="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
                                     </div>
                                 </div>
                             </a>
 
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-1">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/6.png" />
-                                    </div>
-                                    <h5>Elon Musk</h5>
-                                    <p>@musk</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-1">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/6.png" />
-                                    </div>
-                                    <h5>Elon Musk</h5>
-                                    <p>@musk</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular load-more" id="pop-2">
+                            <a href="explore.html" style="text-decoration:none; color: inherit;">
+                                <div class="popular load-more">
                                     <div id="load-more-container">
                                         <h4>Haven't found, what you're looking for?</h4>
                                         <ion-icon name="search" id="more"></ion-icon>
@@ -184,8 +208,47 @@
                                         <div class="tutor-pic">
                                             <img src="assets/pics/users/6.png" />
                                         </div>
-                                        <h6>Elon Musk</h6>
-                                        <p>@musk</p>
+                                        <h6>Steve Wozniak</h6>
+                                        <p>@woz</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>David J. Malan</h6>
+                                        <p>@cs50</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Barak Obama</h6>
+                                        <p>@mrpresident</p>
+                                        <div class="description-l">
+                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="#">
+                                    <div class="personal" id="pers-1">
+                                        <div class="tutor-pic">
+                                            <img src="assets/pics/users/6.png" />
+                                        </div>
+                                        <h6>Bill Gates</h6>
+                                        <p>@gates</p>
                                         <div class="description-l">
                                             Quisque quis sem lorem. Suspendisse vitae nunc purus.
                                         </div>
@@ -205,46 +268,7 @@
                                     </div>
                                 </a>
 
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Elon Musk</h6>
-                                        <p>@musk</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Elon Musk</h6>
-                                        <p>@musk</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Elon Musk</h6>
-                                        <p>@musk</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
+                                <a href="explore.html">
                                     <div class="personal load-more">
                                         <div id="load-more-container">
                                             <h4>Haven't found, what you're looking for?</h4>
@@ -394,7 +418,29 @@
                                         <p>@jobsie</p>
                                         
                                     </div>                                
-                                </a>
+                                    <!DOCTYPE html>
+                                    <html>
+                                        <head>
+                                            <title>Opportunity hacker</title>
+                                            <meta charset="utf-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                            <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+                                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+                                            
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+                                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+                                            
+                                            
+                                            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                            
+                                            <link rel="icon" href="assets/pics/logo.png" type="image/png">
+                                            <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+                                    
+                                        </head></a>
 
                             </div>
 

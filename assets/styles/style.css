@@ -16,7 +16,7 @@ strong {
     font-family: 'Raleway', sans-serif;
 }
 
-h4, h5, p {
+h1, h2, h3, h4, h5, h6, p, div, ul {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -246,7 +246,7 @@ a {
   }
   
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #ffa688ce;
     color: black;
   }
   
@@ -287,8 +287,8 @@ a {
 }
 
 .popular {
-    background-size: 200%;
-    background-color: #a1a1a1;
+    background-size: 185%;
+    background-color: #c2c2c2;
     background-blend-mode: darken;
     color: #fff;
     position: relative;
@@ -299,7 +299,27 @@ a {
 }
 
 #pop-1 {
-    background-image: url("../../assets/pics/users/12.jpg");    
+    background-image: url("../../assets/pics/users/rocket.jpg");    
+}
+
+#pop-2 {
+    background-image: url("../../assets/pics/users/tech.png");    
+}
+
+#pop-3 {
+    background-image: url("../../assets/pics/users/nature.png");    
+}
+
+#pop-4 {
+    background-image: url("../../assets/pics/users/lizard.png");    
+}
+
+#pop-5 {
+    background-image: url("../../assets/pics/users/magic.png");    
+}
+
+#pop-6 {
+    background-image: url("../../assets/pics/users/te.png");    
 }
 
 .description {
@@ -369,3 +389,178 @@ a {
 #more-l {
     font-size: 70px;
 }
+
+a:link{
+    text-decoration: none!important;
+    color: inherit!important;;
+  }
+
+
+  #sidebar-col {
+    border-right: solid 1px var(--text-gray);
+    position: relative;
+  }
+
+/* Fixed sidenav, full height */
+.sidenav {
+    z-index: 1;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: var(--opha);
+  }
+  
+
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: var(--opha);
+    color: #fff;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: var(--blocks-gray);
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+
+  .sections {
+      width: 100%;
+      margin: 10px 0px;
+  }
+
+  .section-item-front {
+    width: 280px;
+    height: 300px;
+    margin: 2px 3px;
+    padding: 10px 15px;
+    border-radius: 15px;    
+    background-size: 185%;
+    background-color: #c2c2c2;
+    background-blend-mode: darken;
+    color: #fff;
+    position: relative;
+}
+
+.section-item-front:first-child {
+    margin: 2px 3px 2px 0px;
+}
+
+
+
+.card {
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    -webkit-box-align: end;
+            align-items: flex-end;
+    -webkit-transition: 0.4s ease-out;
+    transition: 0.4s ease-out;
+    border: none;
+    width: 280px !important;
+    height: 300px !important;
+  }
+  .card:hover {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  .card:hover:before {
+    opacity: 1;
+    border: none;
+  }
+  .card:hover .info {
+    opacity: 1;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .card .section-item-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  .card .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+  }
+  .card .info button {
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .card .info button:hover {
+    background: var(--opha);
+    color: white;
+  }
+  
+  .section-cards-container {
+    height: 315px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }

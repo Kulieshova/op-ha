@@ -157,7 +157,7 @@ input:focus, button:focus {
 .tutor {
     background-color: var(--blocks-gray);
     border-radius: 15px;
-    height: 65px;
+    min-height: 60px;
     padding: 10px 15px;
     margin: 2px 2px;
     font-family: 'Raleway', sans-serif;

@@ -916,3 +916,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+.emoji-interests {
+  width: 20px;
+  margin-right: 15px;
+}

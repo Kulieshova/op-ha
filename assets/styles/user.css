@@ -62,7 +62,7 @@ body {
     transform-origin: bottom;
     display: flex;
     align-items: center;
-    margin-top: -10px;
+    margin-top: 120px;
   }
 }
 
@@ -285,7 +285,7 @@ body {
 .profile-menu-link.active, .profile-menu-link:hover {
   color: #fff;
   background-color: #1b1d2e;
-  border-bottom: 3px solid #1488fa;
+  border-bottom: 3px solid #f57b51;
 }
 
 .profile-avatar {
@@ -383,7 +383,7 @@ body {
 }
 .info-item a {
   margin-left: 6px;
-  color: #1771d6;
+  color: #f57b51;
   text-decoration: none;
 }
 .info-item svg {
@@ -414,7 +414,7 @@ body {
 }
 
 .event-month {
-  background-color: #1687fa;
+  background-color: #f57b51;
   padding: 7px 20px;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
@@ -567,13 +567,13 @@ body {
 }
 
 .status-share {
-  background-color: #1b86f9;
+  background-color: #f57b51;
   border: none;
   color: #fff;
   border-radius: 4px;
   padding: 10px 20px;
   margin-left: auto;
-  box-shadow: 0 0 20px #1b86f9;
+  box-shadow: 0 0 20px #f57b51;
   cursor: pointer;
 }
 
@@ -595,7 +595,7 @@ body {
 }
 
 .album-title span {
-  color: #1771d6;
+  color: #f57b51;
   cursor: pointer;
 }
 
@@ -675,7 +675,7 @@ body {
   position: absolute;
   right: 0px;
   top: -2px;
-  background-color: #1b86f8;
+  background-color: #f57b51;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -813,7 +813,7 @@ body {
   height: 10px;
   border-radius: 50%;
   position: absolute;
-  background-color: #1b86f8;
+  background-color: #f57b51;
   border: 2px solid #1e2031;
   top: 13px;
   right: 12px;
@@ -920,4 +920,9 @@ body {
 .emoji-interests {
   width: 20px;
   margin-right: 15px;
+}
+
+.emoji-interests-5 {
+  width: 17px;
+  margin-right: 3px;
 }

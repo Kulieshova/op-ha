@@ -146,3 +146,30 @@ body {
   .right-search {
     border-top: 1px solid #e4e4e4;
   }
+
+  @media screen and (max-width: 930px) {
+    .left-side-button {
+      background-color: #f8f8f880;
+      color: rgb(146, 146, 146);
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+
+
+.right-side-button {
+  background-color: #ffffff;
+  border-left: 1px solid #e4e4e4;
+  color: #858585;
+}
+.right-side-button:before {
+  background-color: #f57b51;
+  border: 1px solid #b3b3b3;
+}
+.right-side-button svg {
+  width: 22px;
+}
+@media screen and (max-width: 1210px) {
+  .right-side-button {
+    display: block;
+  }
+}

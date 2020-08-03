@@ -1,0 +1,148 @@
+body {
+    background-color: #ffffff;
+    color: #2b2b2b;
+  }
+  
+
+.container {
+    background-color: #ffffff;
+  }
+
+  .left-side {
+    background-color: #ffffff;
+    border-right: 1px solid #e4e4e4;
+
+  }
+
+  .right-side {
+    background-color: #ffffff;
+  }
+
+  .logo {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 76%, #ffffff00 100%);
+  }
+
+  .side-title {
+    color: #333333;
+  }
+
+  .side-menu a {
+    color: #858585;
+  }
+
+  .side-menu a:hover {
+    color: rgb(41, 41, 41);
+  }
+
+  .follow-me {
+    color: #9c9cab;
+    border-top: 1px solid #e4e4e4;
+  }
+  .developer {
+    color: #333333;
+    background-color: #F5F5F5;
+  }
+
+  .search-bar {
+    background-color: #ffffff;
+  }
+
+  .search-bar input {
+    color: #333333;
+  }
+
+  .search-bar input::placeholder {
+    color: #b6b6b6;
+  }
+
+  .main-container {
+    background-color: #E0E0E0;
+  }
+
+  .profile-menu {
+    background: #ffffff;
+  }
+
+  .profile-menu-link {
+    padding: 20px 16px;
+    color: #5c5e6e;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .profile-menu-link.active, .profile-menu-link:hover {
+    color: #3f3f3f;
+    background-color: #eeeeee;
+  }
+
+  .box {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  .intro-title {
+    color: #333333;
+  }
+
+  .intro-menu {
+    background-color: #858585;
+    box-shadow: -8px 0 0 0 #858585, 8px 0 0 0 #858585
+  }
+
+  .info-item {
+    color: #858585;
+  }
+
+  .event-title {
+    color: #333333;
+  }
+  
+  .event-subtitle {
+    color: #5c5e6e;
+  }
+
+  .status-menu-item {
+    color: #858585;
+  }
+  .status-menu-item.active, .status-menu-item:hover {
+    background-color: #f57b51;
+    color: #fff;
+  }
+
+  .status-main {
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  .status-textarea {
+    color: #5c5e6e;
+  }
+
+  .status-textarea::placeholder {
+    color: #b6b6b6;
+  }
+
+  .status-action {
+    color: #333333;
+  }
+
+  .account-button:not(.right-side-button) + .account-button:before {
+    background-color: #f57b51;
+    border: 1px solid #a5a5a5;
+  }
+  
+  .account-user {
+    color: #333333;
+  }
+
+  .account {
+    background-color: #ffffff;
+  }
+
+  .stories {
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  .right-search {
+    border-top: 1px solid #e4e4e4;
+  }

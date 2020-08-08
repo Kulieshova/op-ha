@@ -577,7 +577,7 @@ body {
 
 .album {
   padding-top: 20px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .album .status-main {
   border: none;
@@ -951,7 +951,7 @@ body {
   height: 20px;
   width: 20px;
   margin-right: 4px;
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/blossom.png);
+  background-image: url(../../assets/emoji/blossom.png);
   background-size: 20px;
   background-repeat: no-repeat;
 }
@@ -971,7 +971,7 @@ body {
   color: #7f7f7f !important;
 }
  .options.default::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/blossom.png);
+  background-image: url(../../assets/emoji/blossom.png);
   background-size: 20px;
   background-repeat: no-repeat;
 
@@ -981,37 +981,37 @@ body {
 }
 
  .options.Like::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/like.png);
+  background-image: url(../../assets/emoji/like.png);
   background-size: 20px;
   background-repeat: no-repeat;
 }
  .options.Love::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/heart.png);
+  background-image: url(../../assets/emoji/like.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
 }
 
  .options.Haha::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/lmao.png);
+  background-image: url(../../assets/emoji/lmao.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
 }
  .options.Wow::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/wow.png);
+  background-image: url(../../assets/emoji/wow.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
 }
  .options.Sad::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/sad.png);
+  background-image: url(../../assets/emoji/sad.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
 }
  .options.Angry::before {
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/angry.png);
+  background-image: url(../../assets/emoji/angry.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;

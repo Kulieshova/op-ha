@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="card-hover-interactions/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,14 +17,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         
         <link rel="icon" href="assets/pics/logo.png" type="image/png">
         <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
+        
     </head>
     <body>
         
-        <div class="topnav" id="myTopnav">
+        <!-- <div class="topnav" id="myTopnav">
             
             <a href="index.html"><img src="assets/pics/logo-w.png" id="logo-nav" /></a>
             <a href="#" class="active" style="text-decoration: none; color: white;"><ion-icon name="home" style="margin-bottom: -1px;"></ion-icon> Home</a>
@@ -35,9 +39,107 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
+        </div> -->
+
+        <!-- partial:index.partial.html -->
+<div class="container" x-data="{ rightSide: false, leftSide: false }">
+    <div class="left-side" :class="{'active' : leftSide}">
+      <div class="left-side-button" @click="leftSide = !leftSide">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+    <path d="M19 12H5M12 19l-7-7 7-7"/>
+  </svg>
+      </div>
+      <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
+      <div class="side-wrapper">
+        <div class="side-title">MENU</div>
+        <div class="side-menu">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <path d="M9 22V12h6v10" />
+            </svg>
+            Home
+          </a>
+          <a href="#">
+            <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            Latest News
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" /></svg>
+            Explore
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+            </svg>
+            Files
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+            Galery
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            Events
+          </a>
         </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="side-title">YOUR INTERESTS</div>
+        <div class="side-menu">
+          <a href="#">
+            <img src="assets/emoji/laptop.png" class="emoji-interests" />   
+            Programming
+          </a>
+          <a href="#">
+            <img src="assets/emoji/judge.png" class="emoji-interests" /> 
+            Politics
+          </a>
+          <a href="#">
+            <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
+            Gender Equality
+          </a>
+          <a href="#">
+            <img src="assets/emoji/art.png" class="emoji-interests" /> 
+            Arts
+          </a>
+          <a href="#">
+            <img src="assets/emoji/camp.png" class="emoji-interests" /> 
+            Camps
+          </a>
+          <a href="#">
+            <img src="assets/emoji/science.png" class="emoji-interests" /> 
+            Science
+          </a>
+        </div>
+      </div>
+      <a href="#" class="follow-me" target="_blank">
+        <span class="follow-text">
+          <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
+          Support the project
+       </span>
+        <span class="developer">
+          <img src="assets/pics/logo.png" />
+          Paypal - Opportunity hacker
+        </span>
+      </a>
+    </div>
         
-        <div class="row" style="width: 100%; margin: 0px; padding:0px 5px;">
+        <div class="side-wrapper">
                     
             <div class="col-sm-12" id="main-col">
                 
@@ -119,18 +221,17 @@
                                 </div>
                             </a>
 
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-2">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/8.png" />
-                                    </div>
-                                    <h5>Steve Jobs</h5>
-                                    <p>@stevie</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
+                            <!-- partial:index.partial.html -->
+                            <main class="page-content">
+                                <div class="card">
+                                <div class="content">
+                                    <h2 class="title">Mountain View</h2>
+                                    <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                                    <button class="btn">View Trips</button>
                                 </div>
-                            </a>
+                                </div>
+                            </main>
+                            <!-- partial -->
 
                             <a href="#" style="text-decoration:none; color: inherit;">
                                 <div class="popular" id="pop-3">
@@ -172,7 +273,7 @@
                             </a>
 
                             <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-6">
+                                <!-- <div class="popular" id="pop-6">
                                     <div class="tutor-pic">
                                         <img src="assets/pics/users/11.jpg" />
                                     </div>
@@ -181,7 +282,17 @@
                                     <div class="description">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
                                     </div>
+                                </div> -->
+                                <main class="page-content">
+                                                                    <div class="card">
+                                    <div class="content">
+                                      <h2 class="title">Mountain View</h2>
+                                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                                      <button class="btn">View Trips</button>
+                                    </div>
                                 </div>
+                                </main>
+
                             </a>
 
                             <a href="explore.html" style="text-decoration:none; color: inherit;">

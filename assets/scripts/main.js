@@ -59,3 +59,17 @@ $.each( instance, function(key, value) {
   }
   
 });
+
+(function($) {
+  var $window = $(window),
+      $userorg = $('.card-org');  
+  function resize() {
+      if ($window.width() < 600) {
+          return $userorg.addClass('hover');
+      }
+      $userorg.removeClass('hover');
+  }
+  $window
+      .resize(resize)
+      .trigger('resize');
+})(jQuery);

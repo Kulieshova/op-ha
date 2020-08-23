@@ -29,6 +29,10 @@ body {
   overflow: auto;
   flex-shrink: 0;
 }
+
+.fixed-side {
+  position: fixed;
+}
 @media screen and (max-width: 930px) {
   .left-side.active {
     z-index: 4;
@@ -997,7 +1001,7 @@ body {
   height: 37px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   background-color: #f57b51;
   -webkit-transform: translateY(37px);
           transform: translateY(37px);

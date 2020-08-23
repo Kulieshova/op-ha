@@ -1,586 +1,655 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Opportunity hacker</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-        <link rel="stylesheet" type="text/css" href="card-hover-interactions/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        
-        
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-        
-        <link rel="icon" href="assets/pics/logo.png" type="image/png">
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
-        
-    </head>
-    <body>
-        
-        <!-- <div class="topnav" id="myTopnav">
-            
-            <a href="index.html"><img src="assets/pics/logo-w.png" id="logo-nav" /></a>
-            <a href="#" class="active" style="text-decoration: none; color: white;"><ion-icon name="home" style="margin-bottom: -1px;"></ion-icon> Home</a>
-            <a href="feed.html" style="text-decoration: none; color: white;"><ion-icon name="newspaper" style="margin-bottom: -2px;"></ion-icon> Feed</a>
-            <a href="discussion.html" style="text-decoration: none; color: white;"><ion-icon name="mail-unread" style="margin-bottom: -2px;"></ion-icon> Discussion</a>
-            <a href="explore.html" style="text-decoration: none; color: white;"><ion-icon name="search" style="margin-bottom: -2px;"></ion-icon> Explore</a>
-            <a href="settings.html" style="text-decoration: none; color: white;"><ion-icon name="settings"  style="margin-bottom: -2px;"></ion-icon> Settings</a>
-            <a href="profile.html" style="text-decoration: none; color: white;"><ion-icon name="person" style="margin-bottom: -2px;"></ion-icon> My profile</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div> -->
-
-        <!-- partial:index.partial.html -->
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>User</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <!-- <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode"> -->
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <link rel="icon" href="assets/pics/logo.png" type="image/png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <div class="container" x-data="{ rightSide: false, leftSide: false }">
-    <div class="left-side" :class="{'active' : leftSide}">
-      <div class="left-side-button" @click="leftSide = !leftSide">
-        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-    <path d="M19 12H5M12 19l-7-7 7-7"/>
-  </svg>
-      </div>
-      <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
-      <div class="side-wrapper">
-        <div class="side-title">MENU</div>
-        <div class="side-menu">
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-              <path d="M9 22V12h6v10" />
-            </svg>
-            Home
-          </a>
-          <a href="#">
-            <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-            </svg>
-            Latest News
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-              <circle cx="12" cy="10" r="3" /></svg>
-            Explore
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
-            </svg>
-            Files
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <path d="M21 15l-5-5L5 21" />
-            </svg>
-            Galery
-          </a>
-          <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-              <path d="M16 2v4M8 2v4M3 10h18" />
-            </svg>
-            Events
-          </a>
-        </div>
-      </div>
-      <div class="side-wrapper">
-        <div class="side-title">YOUR INTERESTS</div>
-        <div class="side-menu">
-          <a href="#">
-            <img src="assets/emoji/laptop.png" class="emoji-interests" />   
-            Programming
-          </a>
-          <a href="#">
-            <img src="assets/emoji/judge.png" class="emoji-interests" /> 
-            Politics
-          </a>
-          <a href="#">
-            <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
-            Gender Equality
-          </a>
-          <a href="#">
-            <img src="assets/emoji/art.png" class="emoji-interests" /> 
-            Arts
-          </a>
-          <a href="#">
-            <img src="assets/emoji/camp.png" class="emoji-interests" /> 
-            Camps
-          </a>
-          <a href="#">
-            <img src="assets/emoji/science.png" class="emoji-interests" /> 
-            Science
-          </a>
-        </div>
-      </div>
-      <a href="#" class="follow-me" target="_blank">
-        <span class="follow-text">
-          <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
-          Support the project
-       </span>
-        <span class="developer">
-          <img src="assets/pics/logo.png" />
-          Paypal - Opportunity hacker
-        </span>
-      </a>
+  <div class="left-side" :class="{'active' : leftSide}">
+    <div class="left-side-button" @click="leftSide = !leftSide">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <path d="M19 12H5M12 19l-7-7 7-7"/></svg>
     </div>
-        
-        <div class="side-wrapper">
-                    
-            <div class="col-sm-12" id="main-col">
-                
-                <div class="row">
-                    <div class="col-sm-9" id="stories-col" style="margin-top: 10px;">
-                        <h5><strong>Streaming </strong> now
-                            <a href="#" style="float: right;" onclick="reportMenu()" class="dropmenu"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                            
-                        </h5>
-                        
-                        <div id="stories-container" class="container-no-bar">
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/7.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/10.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/11.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/12.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/2.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/1.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/3.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/4.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/7.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/5.png" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/6.png" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/10.jpg" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/lizard.png" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/te.png" class="user-story-pic"/></a>
-                            <a href="#"><img src="assets/pics/users/tech.png" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/rocket.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/nature.png" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/12.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/11.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                            <a href="#"><img src="assets/pics/users/9.jpg" class="user-story-pic seen"/></a>
-                        </div>  
-
-                    </div> 
-
-                    <div class="col-sm-3" id="search-col" style="margin-top: 10px;">
-                        <h5><strong>Advanced </strong> search
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                            <form action="#" id="search-form">
-                                <input type="text" placeholder="Start typing something" id="search-input"/>
-                                <button type="submit" id="search-submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </form>
-                        </h5>
-
-                    </div>                    
-                </div>
-
-                <div class="row" style="margin-top: 10px;">
-                    <div class="col-sm-9" style="padding: 7px;" id="popular-col">
-                        <h5><strong>Popular </strong> now
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                        </h5>
-
-                        <div id="popular-container" class="container-no-bar">
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-1">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/6.png" />
-                                    </div>
-                                    <h5>Elon Musk</h5>
-                                    <p>@musk</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <!-- partial:index.partial.html -->
-                            <main class="page-content">
-                                <div class="card">
-                                <div class="content">
-                                    <h2 class="title">Mountain View</h2>
-                                    <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                                    <button class="btn">View Trips</button>
-                                </div>
-                                </div>
-                            </main>
-                            <!-- partial -->
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-3">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/2.jpg" />
-                                    </div>
-                                    <h5>Greta Thunberg</h5>
-                                    <p>@greta</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-4">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/10.jpg" />
-                                    </div>
-                                    <h5>Mark Zuckerberg</h5>
-                                    <p>@zuck</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <div class="popular" id="pop-5">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/4.jpg" />
-                                    </div>
-                                    <h5>Joan K. Rowling</h5>
-                                    <p>@musk</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="#" style="text-decoration:none; color: inherit;">
-                                <!-- <div class="popular" id="pop-6">
-                                    <div class="tutor-pic">
-                                        <img src="assets/pics/users/11.jpg" />
-                                    </div>
-                                    <h5>Andy Grove</h5>
-                                    <p>@andy</p>
-                                    <div class="description">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sollicitudin accumsan nunc vitae volutpat. Vestibulum non nunc rhoncus, magna.
-                                    </div>
-                                </div> -->
-                                <main class="page-content">
-                                                                    <div class="card">
-                                    <div class="content">
-                                      <h2 class="title">Mountain View</h2>
-                                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                                      <button class="btn">View Trips</button>
-                                    </div>
-                                </div>
-                                </main>
-
-                            </a>
-
-                            <a href="explore.html" style="text-decoration:none; color: inherit;">
-                                <div class="popular load-more">
-                                    <div id="load-more-container">
-                                        <h4>Haven't found, what you're looking for?</h4>
-                                        <ion-icon name="search" id="more"></ion-icon>
-                                        <p>Click here to load more!</p>                                        
-                                    </div>
-
-                                </div>
-                            </a>
-                        </div>  
-
-                    </div>
-
-
-                    <div class="col-sm-3" style="padding: 7px;" id="personal-col">
-                        <h5><strong>Special </strong> for you
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                        </h5>
-                            <div id="container-personal">
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Steve Wozniak</h6>
-                                        <p>@woz</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-2">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/8.png" />
-                                        </div>
-                                        <h6>David J. Malan</h6>
-                                        <p>@cs50</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Barak Obama</h6>
-                                        <p>@mrpresident</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Bill Gates</h6>
-                                        <p>@gates</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#">
-                                    <div class="personal" id="pers-1">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/6.png" />
-                                        </div>
-                                        <h6>Elon Musk</h6>
-                                        <p>@musk</p>
-                                        <div class="description-l">
-                                            Quisque quis sem lorem. Suspendisse vitae nunc purus.
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="explore.html">
-                                    <div class="personal load-more">
-                                        <div id="load-more-container">
-                                            <h4>Haven't found, what you're looking for?</h4>
-                                            <ion-icon name="search" id="more-l"></ion-icon>
-                                            <p>Click here to load more!</p>                                        
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                    </div>
-
-                </div>
-
-                <div class="row" style="margin-top: 10px;">
-                    
-                    <div class="col-sm-9" style="padding: 7px;" id="tutors-col">
-                        <h5><strong>Top </strong> projects
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                        </h5>
-                        
-                        <div class="row" style="width: 100%; margin: 0px; padding: 0px;">
-                            
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/uwc.jpg" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>UWC Ukraine</h6>
-                                        <p>@DatingAgency</p>
-                                        
-                                    </div>                                
-                                </a>
-
-                            </div>
-
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/hmc.jpg" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>HMC Ukraine</h6>
-                                        <p>@EnglishSir</p>
-                                        
-                                    </div>                                
-                                </a>
-
-                            </div>
-
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/ugs.jpg" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>UGS</h6>
-                                        <p>@StanfordAccepted</p>
-                                        
-                                    </div>                                
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                        <div class="row" style="width: 100%; margin: 0px; padding: 0px;">
-                            
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/flex.png" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>FLEX</h6>
-                                        <p>@damnUSA</p>
-                                        
-                                    </div>                                
-                                </a>
-
-                            </div>
-
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/maskot.png" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>Maskot</h6>
-                                        <p>@yourFavMonkey</p>
-                                        
-                                    </div>                                
-                                </a>
-
-                            </div>
-
-                            <div class="col-sm-4" style="padding: 0px;">
-                                <a href="#" style="text-decoration:none; color: inherit;">
-                                    <div class="tutor">
-                                        <div class="tutor-pic">
-                                            <img src="assets/pics/users/cactus.jpg" />
-                                        </div>
-                                        
-                                        <label class="tutor-checkbox" style="float: right;">
-                                            <input type="checkbox" />
-                                            <span class="lnr lnr-plus-circle iccon unchecked"></span>
-                                            <i class="fas fa-check checked"></i>
-                                        </label>
-
-                                        <h6>CACTUS forum</h6>
-                                        <p>@theCraziestOne</p>
-                                        
-                                    </div>                                
-                                    <!DOCTYPE html>
-                                    <html>
-                                        <head>
-                                            <title>Opportunity hacker</title>
-                                            <meta charset="utf-8">
-                                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                                            <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-                                            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-                                            
-                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                                            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-                                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-                                            
-                                            
-                                            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                                            <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-                                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-                                            
-                                            <link rel="icon" href="assets/pics/logo.png" type="image/png">
-                                            <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-                                    
-                                        </head></a>
-
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-sm-3" style="padding: 7px;" id="social-col">
-                        <h5><strong>Follow </strong> us
-                            <a href="#" style="float: right;"><i class="fas fa-ellipsis-v fa-rotate-90 icon"></i></a>
-                        </h5>
-                        <ul id="social-media-ul">
-                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-instagram"></i> Instagram: <span>@op.hacker</span></a></li>
-                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-telegram-plane"></i> Telegram: <span>@opHacker</span></a></li>
-                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-twitter"></i> Twitter: <span>@opHacker</span></a></li>
-                            <li><a href="#" style="text-decoration:none; color: inherit;"><i class="fab fa-facebook-f"></i> Facebook: <span>@op-hacker</span></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                
-            </div>
-
-        </div>
+    <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
+    <div class="side-wrapper">
+      <div class="side-title">MENU</div>
+      <div class="side-menu">
+        <a href="#">
+          <ion-icon name="home" style="margin-right: 15px;"></ion-icon>  
+          Home
+        </a>
+        <a href="#">
+          <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
+          Feed
+        </a>
+        <a href="#">
+          <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
+          Explore
+        </a>
+        <a href="#">
+          <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
+          </svg>
+          My profile
+        </a>
+        <a href="#">
+          <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
+          Settings
+        </a>
+        <a href="#">
+          <ion-icon name="rocket" style="margin-right: 15px;"></ion-icon>
+          FAQ
+      </div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side-title">YOUR INTERESTS</div>
+      <div class="side-menu">
+        <a href="#">
+          <img src="assets/emoji/laptop.png" class="emoji-interests" />   
+          Programming
+        </a>
+        <a href="#">
+          <img src="assets/emoji/judge.png" class="emoji-interests" /> 
+          Politics
+        </a>
+        <a href="#">
+          <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
+          Gender Equality
+        </a>
+        <a href="#">
+          <img src="assets/emoji/art.png" class="emoji-interests" /> 
+          Arts
+        </a>
+        <a href="#">
+          <img src="assets/emoji/camp.png" class="emoji-interests" /> 
+          Camps
+        </a>
+        <a href="#">
+          <img src="assets/emoji/science.png" class="emoji-interests" /> 
+          Science
+        </a>
+      </div>
+    </div>
+    <a href="#" class="follow-me" target="_blank">
+      <span class="follow-text">
+        <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
+        Support the project
+     </span>
+      <span class="developer">
+        <img src="assets/pics/logo.png" />
+        Paypal - Opportunity hacker
+      </span>
+    </a>
+  </div>
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+        <span class="account-user">Steve Jobs
+          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
+          <span>▼</span>
+        </span>
+    </div>
     
-    </body>
+    <div class="main-container">
+      <!-- Stories -->
+      <div class="hs__wrapper">
+        <h3 style="margin-top: 0px;">Streaming now <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
+        <ul class="hs">
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="assets/scripts/script.js"></script>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="story-active">
+              <img src="assets/pics/users/elon-musk-square.jpg">
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- Recommended -->
+      <div class="hs__wrapper">
+        <h3 style="margin-top: 0px;">Special for you <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
+        <ul class="hs">
+          
+
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>          <li class="hs__item"> 
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mountain View</h2>
+                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                <button class="btn">View Trips</button>
+              </div>
+            </div>
+          </li>
+
+          
+
+        </ul>
+      </div>
+
+            <!-- Popular -->
+            <div class="hs__wrapper">
+              <h3 style="margin-top: 0px;">Popular this week <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
+              <ul class="hs">
+                
+      
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+      
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+      
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>          
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="card">
+                    <div class="content">
+                      <h2 class="title">Mountain View</h2>
+                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
+                      <button class="btn">View Trips</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+         
+            <!-- Popular -->
+            <div class="hs__wrapper">
+              <h3 style="margin-top: 0px;">Top organizators <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
+              <ul class="hs">
+                
+      
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                <li class="hs__item"> 
+                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
+                    <div class="card__shadow"></div>
+                    <div class="card__info">
+                      <div class="card__name">FLEX Ukraine</div>
+                      <div class="card__about">@flex.ua</div>
+                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                    </div>
+                    <div class="card__follow"><span>follow</span></div></a>
+                </div>
+                </li>
+                
+
+              </ul>
+            </div>
+  </div>
+  
+  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+</div>
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  <script src="assets/scripts/main.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
 </html>

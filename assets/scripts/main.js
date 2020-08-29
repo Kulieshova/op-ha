@@ -60,16 +60,56 @@ $.each( instance, function(key, value) {
   
 });
 
-(function($) {
-  var $window = $(window),
-      $userorg = $('.card-org');  
-  function resize() {
-      if ($window.width() < 600) {
-          return $userorg.addClass('hover');
-      }
-      $userorg.removeClass('hover');
+$(document).ready(function() {
+  $('.switcher').click(function(){
+    $(this).addClass('chosen').siblings().removeClass('chosen');       
+});
+
+$('#any-checkbox').click(function(){
+  if ($(this).prop("checked")){
+    $(this).addClass('chosen').siblings().removeClass('chosen');   
   }
-  $window
-      .resize(resize)
-      .trigger('resize');
+        
+});
+
+$( "body" ).on( "change", ".checkbox-inline > input[type=checkbox]", function() {
+  if ($(this).attr("id") === "any-checkbox") { //Any checkbox tick
+      if ($(this).prop("checked")) { //User checked any
+          //Other checkboxes are unchecked
+          $(".checkbox-inline > input[type=checkbox]:not(#any-checkbox)").prop("checked", false);
+      }
+  } else { //Other checkbox tick
+      if ($(this).prop("checked")) {//User checked another checkbox
+          //Any checkbox is unchecked
+          $("#any-checkbox").prop("checked", false);
+          // $('.interests-filters:has(input:not(:checked))').removeClass('interests-filters-active');
+
+      }
+  }
+});
+
+$('.interests-filters-input').click(function() {
+  $('.interests-filters:has(input:checked)').addClass('interests-filters-active');
+  $('.interests-filters:has(input:not(:checked))').removeClass('interests-filters-active');
+});
+
 })(jQuery);
+
+
+
+function myFunction() {
+  var filter = document.getElementById("filters");
+  if (filter.style.display === "none") {
+    filter.style.display = "block";
+  } else {
+    filter.style.display = "none";
+  }
+}
+
+$('input[type="checkbox"]').change(function(){
+  // console.log($(this).is(':checked'));
+  if($(everything).is(':checked')){
+    $("#everything").siblings('input[type="checkbox"]').attr('checked', false);
+  }
+});
+

@@ -577,7 +577,7 @@ body {
 
 .album {
   padding-top: 20px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 .album .status-main {
   border: none;
@@ -1139,7 +1139,7 @@ body {
   background-position: -314px 0;
 }
  .options .reactions .reaction.haha {
-  background-position: -104px 0;
+  background-image: url('/home/kulieshova/op-ha/assets/reactions/3.gif');
 }
  .options .reactions .reaction.wow {
   background-position: -156px 0;

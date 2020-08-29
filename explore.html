@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Explore</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/explore.css">
   <!-- <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode"> -->
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="icon" href="assets/pics/logo.png" type="image/png">
@@ -23,19 +23,19 @@
     <div class="side-wrapper">
       <div class="side-title">MENU</div>
       <div class="side-menu">
-        <a href="#">
+        <a href="index.html">
           <ion-icon name="home" style="margin-right: 15px;"></ion-icon>  
           Home
         </a>
-        <a href="#">
+        <a href="feed.html">
           <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
           Feed
         </a>
-        <a href="#">
+        <a href="explore.html">
           <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
           Explore
         </a>
-        <a href="#">
+        <a href="my-page.html">
           <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
           </svg>
           My profile
@@ -96,8 +96,174 @@
     </div>
     
     <div class="main-container">
-      <h4 style="color:rgb(138, 138, 138)"><ion-icon name="options" style = "font-size: 20px; margin-bottom: -5px;"></ion-icon> filter results</h4>
       
+      <button id="settings-explore" onclick="myFunction()"><ion-icon name="options" style = "font-size: 20px; margin-bottom: -5px;"></ion-icon> filter results</button>
+      
+      <div id="filters">
+        <form action="#">
+          
+          <h4 style="margin: 0px 0px 5px 0px;">Filter by interests</h4>
+          <div class="filters-flex">
+            <label class="interests-filters interests-filters-active checkbox-inline"><img src="assets/emoji/blossom.png"> Show everything
+              <input type="checkbox" class="interests-filters-input" value="everything" name="interests-filters" checked="checked" id="any-checkbox">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/sparkles.png"> Self-development
+              <input type="checkbox" class="interests-filters-input" value="self-development" name="interests-filters">
+            </label>
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/earth.png">Exchange programs and travelling
+              <input type="checkbox" class="interests-filters-input" value="exchange-programs" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/books.png">Education
+              <input type="checkbox" class="interests-filters-input" value="education" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/business.png">Startups and business
+              <input type="checkbox" class="interests-filters-input" value="business" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/laptop.png">Technology
+              <input type="checkbox" class="interests-filters-input" value="technology" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/raised-hands.png">Volunteering and social activism
+              <input type="checkbox" class="interests-filters-input" value="volunteering" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/politics.png">Politics and history
+              <input type="checkbox" class="interests-filters-input" value="politics" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/camp.png">Camps and forums
+              <input type="checkbox" class="interests-filters-input" value="camps" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/rainbow.png">Gender equality and femenism
+              <input type="checkbox" class="interests-filters-input" value="femenism" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline"><img src="assets/emoji/speech.png">Linguistics
+              <input type="checkbox" class="interests-filters-input" value="linguistics" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/science.png">Science and research
+              <input type="checkbox" class="interests-filters-input" value="science" name="interests-filters">
+            </label>
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/art.png">Arts and music 
+              <input type="checkbox" class="interests-filters-input" value="art" name="interests-filters">
+            </label>
+
+
+            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/sport.png">Sport
+              <input type="checkbox" class="interests-filters-input" value="sport" name="interests-filters">
+            </label>
+
+
+          </div>
+
+          <h4 style="margin: 20px 0px 5px 0px;">Filter by location</h4>
+          <div class="filters-flex">
+
+            <label class="interests-filters" >My region only
+              <input type="checkbox" class="interests-filters-input" value="my-region" name="location">
+            </label>
+
+            <label class="interests-filters" >All Ukraine
+              <input type="checkbox" class="interests-filters-input" value="ukraine" name="location">
+            </label>
+
+            <label class="interests-filters" >Europe
+              <input type="checkbox" class="interests-filters-input" value="europe" name="location">
+            </label>
+
+            <label class="interests-filters" >Americas
+              <input type="checkbox" class="interests-filters-input" value="usa" name="location">
+            </label>
+
+            <label class="interests-filters" >Asia, Africa, and Australia
+              <input type="checkbox" class="interests-filters-input" value="asia" name="location">
+            </label>
+
+          </div>
+
+          <h4 style="margin: 20px 0px 5px 0px;">Filter by sex</h4>
+          <div class="filters-flex">
+
+            <label class="interests-filters" >Male
+              <input type="checkbox" class="interests-filters-input" value="male" name="sex">
+            </label>
+
+            <label class="interests-filters" >Female
+              <input type="checkbox" class="interests-filters-input" value="female" name="sex">
+            </label>
+
+            <label class="interests-filters" >Non-binary
+              <input type="checkbox" class="interests-filters-input" value="non-binary" name="sex">
+            </label>
+
+          </div>
+
+          <h4 style="margin: 20px 0px 5px 0px;">Filter by price</h4>
+          <div class="filters-flex">
+
+            <label class="interests-filters" >Free
+              <input type="checkbox" class="interests-filters-input" value="free" name="price">
+            </label>
+
+            <label class="interests-filters" >Paid
+              <input type="checkbox" class="interests-filters-input" value="paid" name="price" id="paid-check">
+            </label>
+            
+            <label class="interests-filters-enter">If you chose paid, how much? Enter maximum amount in hryvnas
+              <input type="number" id="tentacles" name="tentacles" min="0" max="999999" id="amount">
+              </label>
+              
+          </div>
+          <div class="filters-flex" style="justify-content: center;">
+          <!-- <button type="submit" id="filters-button">Filter results!</button>   -->
+          <a href="" class="rocket-button">
+            <div class="default">Filter results</div>
+            <div class="success">
+                <svg>
+                    <use xlink:href="#check">
+                </svg>
+                <div>Done!</div>
+            </div>
+            <div class="animation">
+                <div class="rocket">
+                    <svg>
+                        <use xlink:href="#rocket">
+                    </svg>
+                </div>
+                <div class="smoke">
+                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+            </div>
+        </a>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11" id="check">
+                <polyline stroke="currentColor" points="1 5.5 5 9.5 12 1.5"></polyline>
+            </symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" id="rocket">
+                <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 L8.66666667,31 C4.22222222,19.0350877 5.33333333,8.70175439 12,0 Z" fill="var(--rocket)"></path>
+                <path d="M12,0 C5.33333333,8.70175439 4.22222222,19.0350877 8.66666667,31 C6.72222222,17.9473684 7.83333333,7.61403509 12,0 Z" fill="var(--rocket-shadow-left)"></path>
+                <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 C17.2777778,17.9473684 16.1666667,7.61403509 12,0 Z" fill="var(--rocket-shadow-right)"></path>
+                <path d="M22.2399372,27.25 C21.2403105,25.558628 19.4303122,23.808628 16.21,22 L15,31 L17.6512944,31 C18.2564684,31 18.8216022,31.042427 19.1572924,31.5292747 L21.7379379,35.271956 C22.0515593,35.7267976 22.5795404,36 23.1449294,36 C23.5649145,36 23.9142153,35.7073938 23.9866527,35.3215275 L24,35.146217 L23.9987214,35.1196135 C23.7534506,31.4421183 23.1671892,28.8189138 22.2399372,27.25 Z" fill="var(--rocket-wing-right)"></path>
+                <path d="M1.76006278,27.25 C2.75968951,25.558628 4.56968777,23.808628 7.79,22 L9,31 L6.34870559,31 C5.74353157,31 5.17839777,31.042427 4.84270762,31.5292747 L2.2620621,35.271956 C1.94844071,35.7267976 1.42045963,36 0.855070627,36 C0.435085457,36 0.0857846604,35.7073938 0.0133472633,35.3215275 L0,35.146217 L0.00127855763,35.1196135 C0.24654935,31.4421183 0.832810758,28.8189138 1.76006278,27.25 Z" fill="var(--rocket-wing-left)"></path>
+                <circle fill="var(--rocket-window-shadow)" cx="12" cy="12" r="3"></circle>
+                <circle fill="var(--rocket-window)" cx="12" cy="12" r="2.5"></circle>
+                <path d="M15.6021597,5.99977504 L8.39784027,5.99977504 C8.54788101,5.6643422 8.70496315,5.3309773 8.86908669,4.99968036 L15.1309133,4.99968036 C15.2950369,5.3309773 15.452119,5.6643422 15.6021597,5.99977504 Z" fill-opacity="0.3" fill="var(--rocket-line)"></path>
+            </symbol>
+        </svg>
+          </div>
+          
+
+        </form>
+      </div>
+
       <!-- Self-development-->
       <div class="hs__wrapper">
         <h3 style="margin-top: 0px;">Self-development events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
@@ -1320,12 +1486,38 @@
 </div>
 
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
   <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  <script src='https://wzrd.in/standalone/charming@latest'></script>
+  <script>
+    const d = 40;
+
+document.querySelectorAll('.rocket-button').forEach(elem => {
+
+    elem.querySelectorAll('.default, .success > div').forEach(text => {
+        charming(text);
+        text.querySelectorAll('span').forEach((span, i) => {
+            span.innerHTML = span.textContent == ' ' ? '&nbsp;' : span.textContent;
+            span.style.setProperty('--d', i * d + 'ms');
+            span.style.setProperty('--ds', text.querySelectorAll('span').length * d - d - i * d + 'ms');
+        });
+    });
+
+    elem.addEventListener('click', e => {
+        e.preventDefault();
+        if(elem.classList.contains('animated')) {
+            return;
+        }
+        elem.classList.add('animated');
+        elem.classList.toggle('live');
+        setTimeout(() => {
+            elem.classList.remove('animated');
+        }, 2400);
+    });
+
+});
+  </script>
   <script src="assets/scripts/main.js"></script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-
 </body>
 </html>

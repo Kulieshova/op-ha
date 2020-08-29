@@ -314,7 +314,7 @@ body {
 
 .timeline {
   display: flex;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   position: relative;
   z-index: 2;
 }
@@ -1151,4 +1151,19 @@ body {
 }
  .options .reactions .reaction.angry {
   background-position: -260px 0;
+}
+
+.switcher {
+  display: inline;
+  background-color: #151728;
+  padding: 7px 15px;
+  border-radius: 15px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.chosen {
+  background-color: #f57b51;
+  color: #fff;
 }

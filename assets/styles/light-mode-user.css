@@ -198,3 +198,32 @@ body {
   -webkit-filter: brightness(4);
           filter: brightness(4);
 }
+
+.switcher {
+  background-color: #fff;
+  color: inherit;
+}
+
+.chosen {
+  background-color: #f57b51;
+  color: #fff;
+}
+
+#filters {
+  background-color: #fff;
+}
+
+.interests-filters {
+  background-color: #F1F1F1;
+}
+
+.interests-filters-active {
+  background-color: #f57b51;
+  color: #fff;
+}
+
+.interests-filters-enter input {
+  background-color: #F1F1F1;
+  border: solid 1px #dbdbdb;
+  color: inherit;
+}

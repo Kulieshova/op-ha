@@ -99,17 +99,14 @@ $('.interests-filters-input').click(function() {
 
 function myFunction() {
   var filter = document.getElementById("filters");
+  var buttonFilter = document.getElementById("settings-explore");
   if (filter.style.display === "none") {
     filter.style.display = "block";
+    buttonFilter.style.backgroundColor = "#f57b51";
+    buttonFilter.style.color = "#fff";
   } else {
     filter.style.display = "none";
+    buttonFilter.style.backgroundColor = "#151728";
+    buttonFilter.style.color = "inherit";
   }
 }
-
-$('input[type="checkbox"]').change(function(){
-  // console.log($(this).is(':checked'));
-  if($(everything).is(':checked')){
-    $("#everything").siblings('input[type="checkbox"]').attr('checked', false);
-  }
-});
-

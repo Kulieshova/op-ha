@@ -329,7 +329,7 @@ body {
 @media screen and (max-width: 768px) {
   .timeline {
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
   }
   .timeline-right {
     padding-left: 0;
@@ -1149,4 +1149,14 @@ body {
 }
  .options .reactions .reaction.angry {
   background-position: -260px 0;
+}
+
+.album:first-child{
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 786px) {
+  .album:first-child{
+    margin-top: 20px;
+  }
 }

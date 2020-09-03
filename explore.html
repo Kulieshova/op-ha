@@ -103,60 +103,57 @@
         <form action="#">
           
           <h4 style="margin: 0px 0px 5px 0px;">Filter by interests</h4>
-          <div class="filters-flex">
-            <label class="interests-filters interests-filters-active checkbox-inline"><img src="assets/emoji/blossom.png"> Show everything
-              <input type="checkbox" class="interests-filters-input" value="everything" name="interests-filters" checked="checked" id="any-checkbox">
-            </label>
+          <div class="filters-flex" id="interests-div-wrapper">
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/sparkles.png"> Self-development
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/sparkles.png"> Self-development
               <input type="checkbox" class="interests-filters-input" value="self-development" name="interests-filters">
             </label>
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/earth.png">Exchange programs and travelling
-              <input type="checkbox" class="interests-filters-input" value="exchange-programs" name="interests-filters">
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/earth.png">Exchange programs and travelling
+              <input type="checkbox" class="interests-filters-input" value="travelling" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/books.png">Education
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/books.png">Education
               <input type="checkbox" class="interests-filters-input" value="education" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/business.png">Startups and business
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/business.png">Startups and business
               <input type="checkbox" class="interests-filters-input" value="business" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/laptop.png">Technology
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/laptop.png">Technology
               <input type="checkbox" class="interests-filters-input" value="technology" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/raised-hands.png">Volunteering and social activism
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/raised-hands.png">Volunteering and social activism
               <input type="checkbox" class="interests-filters-input" value="volunteering" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/politics.png">Politics and history
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/politics.png">Politics and history
               <input type="checkbox" class="interests-filters-input" value="politics" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/camp.png">Camps and forums
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/camp.png">Camps and forums
               <input type="checkbox" class="interests-filters-input" value="camps" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/rainbow.png">Gender equality and femenism
-              <input type="checkbox" class="interests-filters-input" value="femenism" name="interests-filters">
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/rainbow.png">Gender equality and feminism
+              <input type="checkbox" class="interests-filters-input" value="feminism" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline"><img src="assets/emoji/speech.png">Linguistics
+            <label class="interests-filters checkbox-inline interests-filters-active"><img src="assets/emoji/speech.png">Linguistics
               <input type="checkbox" class="interests-filters-input" value="linguistics" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/science.png">Science and research
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/science.png">Science and research
               <input type="checkbox" class="interests-filters-input" value="science" name="interests-filters">
             </label>
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/art.png">Arts and music 
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/art.png">Arts and music 
               <input type="checkbox" class="interests-filters-input" value="art" name="interests-filters">
             </label>
 
 
-            <label class="interests-filters checkbox-inline" ><img src="assets/emoji/sport.png">Sport
+            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/sport.png">Sport
               <input type="checkbox" class="interests-filters-input" value="sport" name="interests-filters">
             </label>
 
@@ -205,6 +202,28 @@
 
           </div>
 
+          <h4 style="margin: 20px 0px 5px 0px;">Filter by inclusion</h4>
+          <div class="filters-flex">
+
+            <label class="interests-filters" >Inclusive
+              <input type="checkbox" class="interests-filters-input" value="inclusive" name="inclusion">
+            </label>
+
+            <label class="interests-filters" >Non-inclusive
+              <input type="checkbox" class="interests-filters-input" value="non-inclusive" name="inclusion">
+            </label>
+
+          </div>
+
+          <h4 style="margin: 20px 0px 5px 0px;">Filter by age</h4>
+          <div class="filters-flex">
+
+            <label class="interests-filters-enter" style="margin-left: -10px;">Enter the age of a participant
+              <input type="number" id="tentacles" name="tentacles" min="1" max="100" id="age">
+            </label>
+
+          </div>
+
           <h4 style="margin: 20px 0px 5px 0px;">Filter by price</h4>
           <div class="filters-flex">
 
@@ -218,7 +237,7 @@
             
             <label class="interests-filters-enter">If you chose paid, how much? Enter maximum amount in hryvnas
               <input type="number" id="tentacles" name="tentacles" min="0" max="999999" id="amount">
-              </label>
+            </label>
               
           </div>
           <div class="filters-flex" style="justify-content: center;">
@@ -265,7 +284,7 @@
       </div>
 
       <!-- Self-development-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything self-development">
         <h3 style="margin-top: 0px;">Self-development events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -359,7 +378,7 @@
       </div>
 
       <!-- Exchange programs-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything travelling">
         <h3 style="margin-top: 0px;">Exchange programs and travelling<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -450,7 +469,7 @@
       </div>
 
       <!-- Education -->
-      <div class="hs__wrapper" >
+      <div class="hs__wrapper everything education" >
         <h3 style="margin-top: 0px;">Education programs and events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -544,7 +563,7 @@
       </div>
 
       <!-- Startups and business-->
-      <div class="hs__wrapper ">
+      <div class="hs__wrapper everything business">
         <h3 style="margin-top: 0px;">Startups and business events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -639,7 +658,7 @@
       </div>
 
       <!-- Technology-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything technology">
         <h3 style="margin-top: 0px;">Technology events and courses<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -731,7 +750,7 @@
       </div>
 
       <!-- Volunteering events-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything volunteering">
         <h3 style="margin-top: 0px;">Volunteering and social activism events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -826,7 +845,7 @@
       </div>
 
       <!-- Politics-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything politics">
         <h3 style="margin-top: 0px;">Politics and history events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -920,7 +939,7 @@
       </div>
 
       <!-- Camp-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything camps">
         <h3 style="margin-top: 0px;">Camps and forums <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1015,7 +1034,7 @@
       </div>
 
       <!-- Gender Equality-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything feminism">
         <h3 style="margin-top: 0px;">Gender equality and femenism events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1107,7 +1126,7 @@
       </div>
 
       <!-- Language learning-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything linguistics">
         <h3 style="margin-top: 0px;">Linguistics events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1201,7 +1220,7 @@
       </div>
 
       <!-- Science and research-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything science">
         <h3 style="margin-top: 0px;">Science and research events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1295,7 +1314,7 @@
       </div>
 
       <!-- Art-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything art">
         <h3 style="margin-top: 0px;">Arts and music events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1388,7 +1407,7 @@
       </div>
 
       <!-- Sport-->
-      <div class="hs__wrapper">
+      <div class="hs__wrapper everything sport">
         <h3 style="margin-top: 0px;">Sport events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           
@@ -1519,5 +1538,18 @@ document.querySelectorAll('.rocket-button').forEach(elem => {
   </script>
   <script src="assets/scripts/main.js"></script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script>
+
+    $(function(){
+        $('#interests-div-wrapper input[type="checkbox"].interests-filters-input').attr('checked', 'checked');
+    });
+
+    $(document).ready(function(){
+    $('input[type="checkbox"].interests-filters-input').click(function(){
+        var inputValue = $(this).attr("value");
+        $("." + inputValue).toggle();
+    });
+});
+  </script>
 </body>
 </html>

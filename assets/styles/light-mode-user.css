@@ -227,3 +227,8 @@ body {
   border: solid 1px #dbdbdb;
   color: inherit;
 }
+
+#settings-explore{
+  color: inherit;
+  background-color: #fff;
+}

@@ -26,8 +26,10 @@ body {
   flex-direction: column;
   transition: 0.3s;
   background-color: #151728;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-x: visible;
   flex-shrink: 0;
+  height: auto;
 }
 
 @media screen and (max-width: 930px) {

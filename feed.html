@@ -51,28 +51,52 @@
       <div class="side-title">YOUR INTERESTS</div>
       <div class="side-menu">
         <a href="#">
-          <img src="assets/emoji/laptop.png" class="emoji-interests" />   
-          Programming
-        </a>
-        <a href="#">
-          <img src="assets/emoji/judge.png" class="emoji-interests" /> 
-          Politics
-        </a>
-        <a href="#">
           <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
-          Gender Equality
+          Self-development
         </a>
         <a href="#">
-          <img src="assets/emoji/art.png" class="emoji-interests" /> 
-          Arts
+          <img src="assets/emoji/earth.png" class="emoji-interests" /> 
+          Exchange programs
+        </a>
+        <a href="#">
+          <img src="assets/emoji/books.png" class="emoji-interests" /> 
+          Education
+        </a>
+        <a href="#">
+          <img src="assets/emoji/business.png" class="emoji-interests" /> 
+          Startups and business
+        </a>
+        <a href="#">
+          <img src="assets/emoji/science.png" class="emoji-interests" />   
+          Science and technologies
+        </a>
+        <a href="#">
+          <img src="assets/emoji/raised-hands.png" class="emoji-interests" /> 
+          Social activism
+        </a>
+        <a href="#">
+          <img src="assets/emoji/politics.png" class="emoji-interests" /> 
+          Politics and history
         </a>
         <a href="#">
           <img src="assets/emoji/camp.png" class="emoji-interests" /> 
-          Camps
+          Camps and forums
         </a>
         <a href="#">
-          <img src="assets/emoji/science.png" class="emoji-interests" /> 
-          Science
+          <img src="assets/emoji/equality.png" class="emoji-interests" /> 
+          Gender equality
+        </a>
+        <a href="#">
+          <img src="assets/emoji/speech.png" class="emoji-interests" /> 
+          Linguistics
+        </a>
+        <a href="#">
+          <img src="assets/emoji/art.png" class="emoji-interests" /> 
+          Arts and music
+        </a>
+        <a href="#">
+          <img src="assets/emoji/sport.png" class="emoji-interests" /> 
+          Sport
         </a>
       </div>
     </div>
@@ -99,112 +123,423 @@
       <div class="timeline">
         
         <div class="timeline-right">
-          <h4 style="margin-top: 0px;">
-            <button class="switcher chosen">Everyone</button>
-            <button class="switcher">People only</button>
-            <button class="switcher">Projects only</button>
+          <h4 style="margin-top: 0px; text-align: center;">
+            <button class="switcher chosen"  onclick="currentSlide(1)"><img src="assets/emoji/smiling.png" style="height: 20px; margin-bottom: -5px; margin-right: 5px;"/>Projects I follow</button>
+            <button class="switcher"  onclick="currentSlide(2)"><img src="assets/emoji/crazy.png" style="height: 20px; margin-bottom: -5px; margin-right: 5px;"/>People I follow</button>
+            <button class="switcher"  onclick="currentSlide(3)"><img src="assets/emoji/cowboy.png" style="height: 20px; margin-bottom: -5px; margin-right: 5px;"/>Recommended</button>
           </h4>
-          <div class="album box">
-            <div class="status-main">
-              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-              <div class="album-detail">
-                <div class="album-title"><strong>Steve Jobs</strong> at <span>CACTUS forum</span></div>
-                <div class="album-date">6 hours ago</div>
+          
+          <div class="mySlides" id="projects-feed">
+
+
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
               </div>
-              <button class="intro-menu"></button>
-            </div>
-            <div class="album-content">When the bass drops, so do my problems.
-              <div class="album-photos">
-                <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-                <div class="album-right">
-                  <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-                  <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+              <div class="album-content">When the bass drops, so do my problems.
+                <div class="album-photos">
+                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
                 </div>
               </div>
             </div>
-            <div class="album-actions">
-              <div class="options">
-                <span class="reactions" style="z-index: 999999999999999999;">
-                  <!-- <div class="icon-container">
-                    <span data-popup="Like" class="like reaction"></span>
-                  </div> -->
-                  <div class="icon-container">
-                    <span data-popup="Love"class="love reaction"></span>
+            
+
+
+
+
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">When the bass drops, so do my problems.
+                <div class="album-photos">
+                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
                   </div>
-                  <div class="icon-container">
-                    <span data-popup="Like"class="like reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Haha"class="haha reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Wow"class="wow reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Sad"class="sad reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Angry"class="angry reaction"></span>
-                  </div>
-                </span>
-                
-                <span class="button">
-                  React
-                </span>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+                </div>
               </div>
             </div>
+
+
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">When the bass drops, so do my problems.
+                <div class="album-photos">
+                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">When the bass drops, so do my problems.
+                <div class="album-photos">
+                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">When the bass drops, so do my problems.
+                <div class="album-photos">
+                  <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
+                    <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div class="album box">
-            <div class="status-main">
-              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
-              <div class="album-detail">
-                <div class="album-title"><strong>Steve Jobs</strong> at <span>CACTUS forum</span></div>
-                <div class="album-date">6 hours ago</div>
+
+
+          <div class="mySlides">
+
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>Steve Jobs</strong> at <span>CACTUS forum</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
               </div>
-              <button class="intro-menu"></button>
-            </div>
-            <div class="album-content">When the bass drops, so do my problems.
-              <div class="album-photos">
-                <img src="https://images.unsplash.com/photo-1508179719682-dbc62681c355?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80" alt="" class="album-photo" />
-                <div class="album-right">
-                  <img src="https://images.unsplash.com/photo-1502872364588-894d7d6ddfab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80" alt="" class="album-photo" />
-                  <img src="https://images.unsplash.com/photo-1566737236500-c8ac43014a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="" class="album-photo" />
+              <div class="album-content">AMONG the numerous advantages promised by a wellconstructed Union, none deserves to be more accurately developed than its tendency to break and control the violence of faction. The friend of popular governments never finds himself so much alarmed for their character and fate, as when he contemplates their propensity to this dangerous vice. He will not fail, therefore, to set a due value on any plan which, without violating the principles to which he is attached, provides a proper cure for it. The instability, injustice, and confusion introduced into the public councils, have, in truth, been the mortal diseases under which popular governments have everywhere perished; as they continue to be the favorite and fruitful topics from which the adversaries to liberty derive their most specious declamations. The valuable improvements made by the American constitutions on the popular models, both ancient and modern, cannot certainly be too much admired; but it would be an unwarrantable partiality, to contend that they have as effectually obviated the danger on this side, as was wished and expected. Complaints are everywhere heard from our most considerate and virtuous citizens, equally the friends of public and private faith, and of public and personal liberty, that our governments are too unstable, that the public good is disregarded in the conflicts of rival parties, and that measures are too often decided, not according to the rules of justice and the rights of the minor party, but by the superior force of an interested and overbearing majority. However anxiously we may wish that these complaints had no foundation, the evidence, of known facts will not permit us to deny that they are in some degree true. It will be found, indeed, on a candid review of our situation, that some of the distresses under which we labor have been erroneously charged on the operation of our governments; but it will be found, at the same time, that other causes will not alone account for many of our heaviest misfortunes; and, particularly, for that prevailing and increasing distrust of public engagements, and alarm for private rights, which are echoed from one end of the continent to the other. These must be chiefly, if not wholly, effects of the unsteadiness and injustice with which a factious spirit has tainted our public administrations.
+              </div>
+              
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+  
                 </div>
               </div>
+  
             </div>
-            <div class="album-actions">
-              <div class="options">
-                <span class="reactions" style="z-index: 999999999999999999;">
-                  <!-- <div class="icon-container">
-                    <span data-popup="Like" class="like reaction"></span>
-                  </div> -->
-                  <div class="icon-container">
-                    <span data-popup="Love"class="love reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Like"class="like reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Haha"class="haha reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Wow"class="wow reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Sad"class="sad reaction"></span>
-                  </div>
-                  <div class="icon-container">
-                    <span data-popup="Angry"class="angry reaction"></span>
-                  </div>
-                </span>
-                
-                <span class="button">
-                  React
-                </span>
-              </div>
-            </div>
+
+            
           </div>
+
+
+
+
+
+
+          <div class="mySlides">
+
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>FLEX</strong> at <span>Washington, D.C.</span></div>
+                  <div class="album-date">99 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">O! say can you see, by the dawn's early light,
+                What so proudly we hailed at the twilight's last gleaming,
+                Whose broad stripes and bright stars through the perilous fight,
+                O'er the ramparts we watched, were so gallantly streaming?
+                And the rockets' red glare, the bombs bursting in air,
+                Gave proof through the night that our flag was still there;
+                O! say does that star-spangled banner yet wave
+                O'er the land of the free and the home of the brave?
+                
+                On the shore dimly seen through the mists of the deep,
+                Where the foe's haughty host in dread silence reposes,
+                What is that which the breeze, o'er the towering steep,
+                As it fitfully blows, half conceals, half discloses?
+                Now it catches the gleam of the morning's first beam,
+                In full glory reflected now shines in the stream:
+                'Tis the star-spangled banner, O! long may it wave
+                O'er the land of the free and the home of the brave.
+                
+                And where is that band who so vauntingly swore
+                That the havoc of war and the battle's confusion,
+                A home and a country, should leave us no more?
+                Their blood has washed out their foul footsteps' pollution.
+                No refuge could save the hireling and slave
+                From the terror of flight, or the gloom of the grave:
+                And the star-spangled banner in triumph doth wave,
+                O'er the land of the free and the home of the brave.
+                
+                O! thus be it ever, when freemen shall stand
+                Between their loved homes and the war's desolation.
+                Blest with vict'ry and peace, may the Heav'n rescued land
+                Praise the Power that hath made and preserved us a nation!
+                Then conquer we must, when our cause it is just,
+                And this be our motto: 'In God is our trust.'
+                And the star-spangled banner in triumph shall wave
+                O'er the land of the free and the home of the brave!
+              </div>
+              
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love"class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like"class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha"class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow"class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad"class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry"class="angry reaction"></span>
+                    </div>
+                  </span>
+                  
+                  <span class="button">
+                    React
+                  </span>
+  
+                </div>
+              </div>
+  
+            </div>
+
+            
+          </div>
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -340,6 +675,34 @@
   <script  src="assets/scripts/reaction.js"></script>
   <script  src="assets/scripts/main.js"></script>
   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+  </script>
 
 </body>
 </html>

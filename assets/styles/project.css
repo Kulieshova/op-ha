@@ -983,7 +983,7 @@ body {
 }
 
  .options.Like::before {
-  background-image: url(../../assets/emoji/like.png);
+  background-image: url(../../assets/emoji/crazy.png);
   background-size: 20px;
   background-repeat: no-repeat;
 }
@@ -995,7 +995,7 @@ body {
 }
 
  .options.Haha::before {
-  background-image: url(../../assets/emoji/lmao.png);
+  background-image: url(../../assets/emoji/lol.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
@@ -1007,7 +1007,7 @@ body {
   background-repeat: no-repeat;
 }
  .options.Sad::before {
-  background-image: url(../../assets/emoji/sad.png);
+  background-image: url(../../assets/emoji/cry.png);
   background-size: 20px;
   /* background-position: -500 0px; */
   background-repeat: no-repeat;
@@ -1056,7 +1056,7 @@ body {
   line-height: initial;
   opacity: 0;
   border-radius: 100%;
-  background-image: url(https://assets.medinnna.com/facebook-reactions.gif);
+  background-image: url(/home/kulieshova/op-ha/assets/emoji/reactions.gif);
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -1131,16 +1131,14 @@ body {
   transition: opacity 0.07s ease;
 }
  .options .reactions .reaction.like {
-  background-position: 0 0;
-}
- .options .reactions .reaction.love {
   background-position: -52px 0;
 }
- .options .reactions .reaction.thankful {
-  background-position: -314px 0;
+ .options .reactions .reaction.love {
+  background-position: 0 0;
 }
+
  .options .reactions .reaction.haha {
-  background-image: url('/home/kulieshova/op-ha/assets/reactions/3.gif');
+  background-position: -104px 0;
 }
  .options .reactions .reaction.wow {
   background-position: -156px 0;
@@ -1149,7 +1147,7 @@ body {
   background-position: -208px 0;
 }
  .options .reactions .reaction.angry {
-  background-position: -260px 0;
+  background-position: -314px 0;
 }
 
 .album:first-child{

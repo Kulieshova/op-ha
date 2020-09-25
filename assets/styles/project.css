@@ -1056,7 +1056,7 @@ body {
   line-height: initial;
   opacity: 0;
   border-radius: 100%;
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/reactions.gif);
+  background-image: url(../../assets/emoji/reactions.gif);
   background-repeat: no-repeat;
   background-size: auto;
 }

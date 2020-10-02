@@ -1180,3 +1180,6 @@ body {
 }
 
 .mySlides {display: none}
+.right-side, .right-side-button {
+  display: none;
+}

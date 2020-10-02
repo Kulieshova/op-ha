@@ -1190,3 +1190,8 @@ body {
   height: 15px;
   margin-right: 7px;
 }
+
+
+.right-side, .right-side-button {
+  display: none;
+}

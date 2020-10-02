@@ -1160,3 +1160,6 @@ body {
     margin-top: 20px;
   }
 }
+.right-side, .right-side-button {
+  display: none;
+}

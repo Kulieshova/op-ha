@@ -746,9 +746,9 @@ hr {
     top: 0;
     width: 18px;
     height: 18px;
-    border: 1px solid #ddd;
+    border: 1px solid #24273B;
     border-radius: 100%;
-    background: #fff;
+    background: #2e324b;
 }
 .travelling:checked + label:after,
 .travelling:not(:checked) + label:after {
@@ -807,9 +807,9 @@ hr {
     top: 0;
     width: 18px;
     height: 18px;
-    border: 1px solid #ddd;
+    border: 1px solid#24273B;
     border-radius: 1px;
-    background: #fff;
+    background: #2e324b;
 }
 .travelling-place:checked + label:after,
 .travelling-place:not(:checked) + label:after {
@@ -836,4 +836,50 @@ hr {
 }
 .right-side, .right-side-button {
   display: none;
+}
+
+h5 > div > .travel-div > img {
+  width: auto; 
+  height: 25px; 
+  margin-bottom: -5px;
+}
+
+@media screen and (max-width: 1002px) {
+  h5 > div > .travel-div > img {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  h5 > div > .travel-div > img {
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  h5 > div > .travel-div > img {
+    margin-bottom: 3px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  h5 > div > .travel-div > img {
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  h5 > div > .travel-div > img {
+    margin-bottom: 3px;
+  }
+}
+
+.interests-set {
+  display: inline-block;
+  width: 220px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px; 
+  margin-right: 20px; 
+  margin-bottom: 3px;
 }

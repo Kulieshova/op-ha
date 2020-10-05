@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>User</title>
+  <title>Settings</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   
   <link rel="stylesheet" href="assets/styles/settings.css">
@@ -127,6 +127,10 @@
             </div>
             <div class="info">
               <div class="info-item">
+                <img src="assets/emoji/trophy_1f3c6.png" class="emoji-interests" /> 
+                Alumn of <a href="#">12 projects</a>
+              </div>
+              <div class="info-item">
                 <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
                 Following <a href="#">125 projects</a>
               </div>
@@ -147,7 +151,7 @@
             <div class="status-main" style="padding-bottom: 0px;">
               <h3 style="margin: 0px;">Information</h3>
             </div>
-            <hr style="width: 65%; text-align:left;margin-left:20px;">
+            <hr style="width: 85%; text-align:left;margin-left:20px;">
             <div class="album-content">
               <h5 style="margin: 0px; ">
                 First name<br>
@@ -157,10 +161,123 @@
                 Last name<br>
                 <input type="text" value="Musk" class="input-settings"/>
               </h5>
+              <h5 style="margin: 0px; ">
+               Year of birth<br>
+                <input type="number" value="1978" class="input-settings" max="2020"/>
+              </h5>
             </div>
 
+
+
+
+
+            <h3 style="margin: 0px 0px 0px 20px;">Interests</h3>
+            <hr style="width: 85%; text-align:left;margin-left:20px;">
             <div class="album-content">
-              <h5 style="margin: 0px;">
+              <h5 class="interests-set">
+                <img src="assets/emoji/sparkles.png" class="emoji-interests" />
+                Self-development
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/earth.png" class="emoji-interests" /> 
+                Exchange programs
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/books.png" class="emoji-interests" /> 
+                Education
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/business.png" class="emoji-interests" /> 
+                Startups and business
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/science.png" class="emoji-interests" />   
+                Science and technologies
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/raised-hands.png" class="emoji-interests" /> 
+                Social activism
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/politics.png" class="emoji-interests" /> 
+                Politics and history
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/camp.png" class="emoji-interests" /> 
+                Camps and forums
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/speech.png" class="emoji-interests" /> 
+                Linguistics
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/equality.png" class="emoji-interests" /> 
+                Gender equality
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/art.png" class="emoji-interests" /> 
+                Arts and music
+              </h5>
+              <h5 class="interests-set">
+                <img src="assets/emoji/sport.png" class="emoji-interests" /> 
+                Sport
+              </h5>
+              
+           </div>
+           <button type="submit" style="display: block; width: 230px; text-align: center; background-color: #f57b51; color: white; border-radius: 3px; border: solid 1px #e06d46; padding: 5px 7px; margin: 7px auto;">Edit list</button>
+
+
+
+           <h3 style="margin: 0px 0px 0px 20px;">Social media</h3>
+           <hr style="width: 85%; text-align:left;margin-left:20px;">
+           <div class="album-content">
+             <h5 style="margin: 0px; margin-right: 20px;">
+               Instagram
+               <div>
+                 <div class="travel-div"> 
+                   <img src="assets/emoji/instagram.png"/>
+                   <input type="text" value="Musk" class="input-settings"/>
+                 </div>
+               </div>
+             </h5>
+
+             <h5 style="margin: 0px; margin-right: 20px;">
+               Facebook
+               <div>
+                 <div class="travel-div"> 
+                   <img src="assets/emoji/facebook.png"/>
+                   <input type="text" value="Musk" class="input-settings"/>
+                 </div>
+               </div>
+             </h5>
+
+             <h5 style="margin: 0px; margin-right: 20px;">
+               Website
+               <div>
+                 <div class="travel-div"> 
+                   <img src="assets/emoji/internet.png"/>
+                   <input type="text" value="Musk" class="input-settings"/>
+                 </div> 
+             </h5>
+
+             <h5 style="margin: 0px; margin-right: 20px;">
+               Link to my Opportunity Hacker's page*
+               <div>
+                 <div class="travel-div"> 
+                   <img src="assets/pics/logo.png"/>
+                   <input type="text" value="Musk" class="input-settings" disabled/>
+                 </div>
+                 <small>*you cannot edit it</small>
+             </h5>
+           </div>
+
+
+
+            <h3 style="margin: 0px 0px 0px 20px;">Travelling</h3>
+          <hr style="width: 85%; text-align:left;margin-left:20px;">
+
+            <div class="album-content">
+              <h5 style="margin: 0px; margin-bottom: 10px;">
                 Your region
                 <div class="custom-select" style="width:100%; padding: 0px;">                
                   <select id="regions" name="location" required>
@@ -175,7 +292,7 @@
                           <option value="Kharkiv">Kharkiv Oblast</option>
                           <option value="Kherson">Kherson Oblast</option>
                           <option value="Khmelnytskyi">Khmelnytskyi Oblast</option>
-                          <option value="Kiev">Kiev Oblast</option>
+                          <option value="Kyiv">Kyiv Oblast</option>
                           <option value="Kirovohrad">Kirovohrad Oblast</option>
                           <option value="Luhansk">Luhansk Oblast</option>
                           <option value="Lviv">Lviv Oblast</option>
@@ -198,39 +315,92 @@
                 
               </h5>
 
-              <h5 style="margin: 0px; margin-right: 20px;"">
+              <h5 style="margin: 0px; margin-right: 20px;">
                 Travelling?
-                <div style="display: flex; flex-direction: row;" >
+                <div  >
                   <div class="travel-div"> 
-                    <input type="radio" id="travel-yes" name="travel" checked class="travelling">
-                    <label for="travel-yes">yes</label>
+                    <input type="radio" id="travel-yes" name="travel" checked class="travelling checked">
+                    
+                    <label for="travel-yes"><img src="assets/emoji/yes.gif" style="width: auto; height: 25px; margin-bottom: -10px;"/>Yes, I would like to travel</label>
 
                   </div>
-                  <div class="travel-div">
+                  <div class="travel-div" style="margin-top: 10px;">
                     <input type="radio" id="travel-no" name="travel" class="travelling">
-                    <label for="travel-no">no</label>                  
+                    <label for="travel-no"><img src="assets/emoji/no.gif" style="width: auto; height: 25px; margin-top: -5px;"/> No, I do not want to travel</label>                  
                   </div>                
                 </div>
+                
               </h5>
 
-              <h5 style="margin: 0px;">
+              <h5 style="margin-top: 0px;">
                 Where to?
-                <div style="display: flex; flex-direction: row;">
                   <div class="travel-div">
                     <input type="checkbox" id="travel-ukraine" name="travel-where" class="travelling-place">
-                    <label for="travel-ukraine">Regions in my coutry</label>
+                    <label for="travel-ukraine"> <img src="assets/emoji/home.png" style="height: 19px; width: auto; "/> Within Ukraine</label>
 
                   </div>
                   <div class="travel-div">
                     <input type="checkbox" id="travel-abroad" name="travel-where" checked class="travelling-place">
-                    <label for="travel-abroad">Abroad</label>                  
+                    <label for="travel-abroad"><img src="assets/emoji/earth.png" style="height: 19px; width: auto; margin: 0px 5px 0px 0px;"/>Worldwide</label>                  
                   </div>                
-                </div>
               </h5>
 
             </div>
 
+
+
+            <h3 style="margin: 0px 0px 0px 20px;">Preferences</h3>
+            <hr style="width: 85%; text-align:left;margin-left:20px;">
+            <div class="album-content">
+              <h5 style="margin: 0px; margin-right: 20px;">
+                Theme color
+                <div  >
+                  <div class="travel-div"> 
+                    <input type="radio" id="dark-theme" name="theme" checked class="travelling">
+                    
+                    <label for="dark-theme"><img src="assets/emoji/dark.png" style="width: auto; height: 17px; margin-bottom: 0px;"/> Dark theme</label>
+
+                  </div>
+                  <div class="travel-div" style="margin-top: 10px;">
+                    <input type="radio" id="light-theme" name="theme" class="travelling">
+                    <label for="light-theme"><img src="assets/emoji/light.png" style="width: auto; height: 17px; margin-top: 0px;"/> Light theme</label>                  
+                  </div>                
+                </div>
+              </h5>
+
+
+            </div>
+
+            <div class="album-content">
+              <h5 style="margin: 0px; margin-right: 20px;">
+                Interface's language
+                <div  >
+                  <div class="travel-div"> 
+                    <input type="radio" id="lang-en" name="language" checked class="travelling">
+                    <label for="lang-en"><img src="assets/emoji/usa.png" style="width: auto; height: 17px; margin-bottom: 0px;"/> English</label>
+                  </div>
+
+                  <div class="travel-div" style="margin-top: 10px;">
+                    <input type="radio" id="lang-ua" name="language" class="travelling">
+                    <label for="lang-ua"><img src="assets/emoji/ua.png" style="width: auto; height: 17px; margin-top: 0px;"/> Українська</label>                  
+                  </div> 
+                  
+                  <div class="travel-div" style="margin-top: 10px;">
+                    <input type="radio" id="lang-ru" name="language" class="travelling">
+                    <label for="lang-ru"><img src="assets/emoji/ru.png" style="width: auto; height: 17px; margin-top: 0px;"/> Русский</label>                  
+                  </div>
+                </div>
+              </h5>
+
+
+            </div>
+
+                <button type="submit" style="display: block; width: 230px; text-align: center; background-color: #f57b51; color: white; border-radius: 3px; border: solid 1px #e06d46; padding: 5px 7px; margin: 7px auto;">Save changes</button>
+
           </div>
+
+         
+          
         </div>
       </div>
     </div>
@@ -321,5 +491,6 @@
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
     </script>
+    <script src="assets/scripts/settings.js"></script>
 </body>
 </html>

@@ -232,3 +232,21 @@ body {
   color: inherit;
   background-color: #fff;
 }
+
+.travelling-place:checked + label:before,
+.travelling-place:not(:checked) + label:before {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.travelling:checked + label:before,
+.travelling:not(:checked) + label:before {
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.input-settings {
+  background-color:#f7f7f7;
+  color: inherit;
+  border: solid 1px#ddd;
+}

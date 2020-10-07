@@ -268,9 +268,10 @@ body {
   position: absolute;
   bottom: 0;
   background: #151728;
-  padding: 10px 0px 10px 170px;
+  padding: 10px 20px 10px 170px;
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   border-radius: 0 0 4px 4px;
 }
 
@@ -878,7 +879,7 @@ body {
   }
 
   .profile-menu {
-    padding-left: 0;
+    padding-left: 20px;
     width: 100%;
     overflow: auto;
     justify-content: center;
@@ -1219,7 +1220,7 @@ body {
 }
 
 #likeInput:checked ~ #likeInputLabel{
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/like-y.png);
+  background-image: url(../../assets/emoji/like-y.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1238,7 +1239,7 @@ body {
   background-color: transparent;
   -webkit-transition: all 300ms ease-in;
   transition: all 300ms ease-in;
-  background-image: url(/home/kulieshova/op-ha/assets/emoji/like-pr.png);
+  background-image: url(../../assets/emoji/like-pr.png);
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;

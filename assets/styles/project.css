@@ -267,8 +267,8 @@ body {
 .profile-menu {
   position: absolute;
   bottom: 0;
-  padding-left: 200px;
   background: #151728;
+  padding: 10px 0px 10px 170px;
   width: 100%;
   display: flex;
   border-radius: 0 0 4px 4px;
@@ -882,6 +882,7 @@ body {
     width: 100%;
     overflow: auto;
     justify-content: center;
+    padding-bottom: 5px;
   }
 
   .profile-menu-link {
@@ -919,11 +920,13 @@ body {
 .emoji-interests {
   width: 20px;
   margin-right: 15px;
+  height: auto;
 }
 
 .emoji-interests-5 {
   width: 17px;
   margin-right: 3px;
+  height: auto;
 }
 
 
@@ -1181,7 +1184,6 @@ body {
   color: #fff;
   position: relative;
   border-radius: 3px;
-  /* margin-bottom: 5px; */
   margin-right: 10px;
   cursor: pointer;
 }
@@ -1194,4 +1196,218 @@ body {
 
 .right-side, .right-side-button {
   display: none;
+}
+
+
+#likeInput {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#likeInput:checked ~ #likeInputLabel:before {
+  will-change: transform, border-width, border-color;
+  -webkit-animation: bubble 1s ease-in;
+          animation: bubble 1s ease-in;
+            visibility: hidden;
+}
+#likeInput:checked ~ #likeInputLabel:after {
+  will-change: opacity, box-shadow;
+  -webkit-animation: sparkles 700ms ease-in-out;
+          animation: sparkles 700ms ease-in-out;
+}
+
+#likeInput:checked ~ #likeInputLabel{
+  background-image: url(/home/kulieshova/op-ha/assets/emoji/like-y.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#likeInputLabel {
+  position: relative;
+  display: grid;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-template-columns: 20px auto 100px;
+  grid-gap: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  -webkit-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  background-image: url(/home/kulieshova/op-ha/assets/emoji/like-pr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 55555;
+  margin-left: 10px;
+}
+
+#likeInputLabel:before, #likeInputLabel:after {
+  position: absolute;
+  left: 16px;
+  border-radius: 50%;
+  content: '';
+  
+}
+#likeInputLabel:before {
+  margin: -2rem;
+  border: solid 2rem #545461;
+  width: 4rem;
+  height: 4rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#likeInputLabel:after {
+  margin: -0.1875rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  box-shadow: 0.32476rem -2.6875rem 0 -0.1875rem #ff8080, -0.32476rem -2.3125rem 0 -0.1875rem #ffed80, 2.30366rem -1.42172rem 0 -0.1875rem #ffed80, 1.6055rem -1.69573rem 0 -0.1875rem #a4ff80, 2.54785rem 0.91464rem 0 -0.1875rem #a4ff80, 2.32679rem 0.19796rem 0 -0.1875rem #80ffc8, 0.87346rem 2.56226rem 0 -0.1875rem #80ffc8, 1.29595rem 1.94258rem 0 -0.1875rem #80c8ff, -1.45866rem 2.28045rem 0 -0.1875rem #80c8ff, -0.71076rem 2.2244rem 0 -0.1875rem #a480ff, -2.69238rem 0.28141rem 0 -0.1875rem #a480ff, -2.18226rem 0.8312rem 0 -0.1875rem #ff80ed, -1.89869rem -1.92954rem 0 -0.1875rem #ff80ed, -2.01047rem -1.18791rem 0 -0.1875rem #ff8080;
+  
+}
+
+@-webkit-keyframes radio {
+  0%, 17.5% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-transform: translateX(-70px) rotate(10deg);
+            transform: translateX(-70px) rotate(10deg);
+  }
+  to {
+    -webkit-transform: translateX(300px) rotate(10deg);
+            transform: translateX(300px) rotate(10deg);
+  }
+}
+@keyframes shine {
+  from {
+    -webkit-transform: translateX(-70px) rotate(10deg);
+            transform: translateX(-70px) rotate(10deg);
+  }
+  to {
+    -webkit-transform: translateX(300px) rotate(10deg);
+            transform: translateX(300px) rotate(10deg);
+  }
+}
+@-webkit-keyframes bubble {
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-color: #545461;
+    border-width: 2rem;
+  }
+  30%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-color: #545461;
+    border-width: 0;
+  }
+}
+@keyframes bubble {
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-color: #545461;
+    border-width: 2rem;
+  }
+  30%, 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    border-color: #545461;
+    border-width: 0;
+  }
+}
+@-webkit-keyframes sparkles {
+  0%, 10% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) rotate(-20deg);
+            transform: scale(1.2) rotate(-20deg);
+    box-shadow: 0.32476rem -2.1875rem 0 0rem #ff8080, -0.32476rem -1.8125rem 0 0rem #ffed80, 1.91274rem -1.10998rem 0 0rem #ffed80, 1.21459rem -1.38398rem 0 0rem #a4ff80, 2.06039rem 0.80338rem 0 0rem #a4ff80, 1.83932rem 0.0867rem 0 0rem #80ffc8, 0.65652rem 2.11178rem 0 0rem #80ffc8, 1.07901rem 1.4921rem 0 0rem #80c8ff, -1.24172rem 1.82996rem 0 0rem #80c8ff, -0.49382rem 1.77391rem 0 0rem #a480ff, -2.20492rem 0.17015rem 0 0rem #a480ff, -1.69479rem 0.71994rem 0 0rem #ff80ed, -1.50777rem -1.61779rem 0 0rem #ff80ed, -1.61955rem -0.87617rem 0 0rem #ff8080;
+  }
+}
+@keyframes sparkles {
+  0%, 10% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  15% {
+    opacity: 1;
+    -webkit-transform: scale(1.2) rotate(-20deg);
+            transform: scale(1.2) rotate(-20deg);
+    box-shadow: 0.32476rem -2.1875rem 0 0rem #ff8080, -0.32476rem -1.8125rem 0 0rem #ffed80, 1.91274rem -1.10998rem 0 0rem #ffed80, 1.21459rem -1.38398rem 0 0rem #a4ff80, 2.06039rem 0.80338rem 0 0rem #a4ff80, 1.83932rem 0.0867rem 0 0rem #80ffc8, 0.65652rem 2.11178rem 0 0rem #80ffc8, 1.07901rem 1.4921rem 0 0rem #80c8ff, -1.24172rem 1.82996rem 0 0rem #80c8ff, -0.49382rem 1.77391rem 0 0rem #a480ff, -2.20492rem 0.17015rem 0 0rem #a480ff, -1.69479rem 0.71994rem 0 0rem #ff80ed, -1.50777rem -1.61779rem 0 0rem #ff80ed, -1.61955rem -0.87617rem 0 0rem #ff8080;
+  }
+}
+
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes follow-animation {
+  from {background: #f57b51; color: #fff; width: 85px; left: 50px; }
+  to {background: #2EB82E; border-color: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+}
+@-webkit-keyframes unfollow-animation {
+  from {background: #2EB82E; color: #ffffff; width: 120px; left: 35px;}
+  to {background: #f57b51; border-color: #f57b51; color: #fff; width: 85px; left: 50px;}
+}
+
+/* Standard syntax */
+@keyframes follow-animation {
+  from {background: #f57b51; color: #fff; width: 85px; left: 5px;}
+  to {background: #2EB82E; border-color: #2EB82E; color: #ffffff; width: 120px; left: 7px;}
+}
+@keyframes unfollow-animation {
+  from {background: #2EB82E; color: #ffffff; width: 120px; left: 7px;}
+  to {background:#f57b51; border-color: #f57b51; color: #fff; width: 85px; left: 5px;}
+}
+
+#followingButton {
+  -webkit-appearance: none;
+}
+
+#followingButton:after {
+  color: #fff;
+  font-family: "Helvetica";
+  font-size: 10pt;
+  background-color: #f57b51;
+  border: 1px solid;
+  border-color: #f57b51;
+  border-radius: 3px;
+  position: relative;
+  cursor: hand;
+  display: inline-block;
+  text-align: center;
+  padding: 9px 15px;
+  z-index: 8888;
+  height: 35px;
+  margin-top: 3px;
+
+
+  content: '+ Follow';
+  -webkit-animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode:forwards;
+  animation: unfollow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode:forwards;
+}
+
+#followingButton:checked:after {
+  content: 'Following';
+  -webkit-animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-fill-mode:forwards;
+  animation: follow-animation 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode:forwards;
 }

@@ -571,11 +571,13 @@ body {
 .emoji-interests {
   width: 20px;
   margin-right: 15px;
+  height: auto;
 }
 
 .emoji-interests-5 {
   width: 17px;
   margin-right: 3px;
+  height: auto;
 }
 
 ::-webkit-scrollbar {

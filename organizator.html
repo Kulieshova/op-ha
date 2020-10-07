@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>User</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
+  <link rel="stylesheet" href="assets/styles/project.css">
+  <!-- <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode"> -->
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="assets/pics/logo.png" type="image/png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" x-data="{ rightSide: false, leftSide: false }">
+  <div class="left-side" :class="{'active' : leftSide}">
+    <div class="left-side-button" @click="leftSide = !leftSide">
+      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+  <path d="M19 12H5M12 19l-7-7 7-7"/>
+</svg>
+    </div>
+    <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
+    <div class="side-wrapper">
+      <div class="side-title">MENU</div>
+      <div class="side-menu">
+        <a href="index.html">
+          <ion-icon name="home" style="margin-right: 15px;"></ion-icon>  
+          Home
+        </a>
+        <a href="feed.html">
+          <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
+          Feed
+        </a>
+        <a href="explore.html">
+          <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
+          Explore
+        </a>
+        <a href="my-page.html">
+          <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
+          </svg>
+          My profile
+        </a>
+        <a href="#">
+          <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
+          Settings
+        </a>
+      </div>
+    </div>
+    <div class="side-wrapper">
+      <div class="side-title">YOUR INTERESTS</div>
+      <div class="side-menu">
+        <a href="#">
+          <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
+          Self-development
+        </a>
+        <a href="#">
+          <img src="assets/emoji/earth.png" class="emoji-interests" /> 
+          Exchange programs
+        </a>
+        <a href="#">
+          <img src="assets/emoji/books.png" class="emoji-interests" /> 
+          Education
+        </a>
+        <a href="#">
+          <img src="assets/emoji/business.png" class="emoji-interests" /> 
+          Startups and business
+        </a>
+        <a href="#">
+          <img src="assets/emoji/science.png" class="emoji-interests" />   
+          Science and technologies
+        </a>
+        <a href="#">
+          <img src="assets/emoji/raised-hands.png" class="emoji-interests" /> 
+          Social activism
+        </a>
+        <a href="#">
+          <img src="assets/emoji/politics.png" class="emoji-interests" /> 
+          Politics and history
+        </a>
+        <a href="#">
+          <img src="assets/emoji/camp.png" class="emoji-interests" /> 
+          Camps and forums
+        </a>
+        <a href="#">
+          <img src="assets/emoji/equality.png" class="emoji-interests" /> 
+          Gender equality
+        </a>
+        <a href="#">
+          <img src="assets/emoji/speech.png" class="emoji-interests" /> 
+          Linguistics
+        </a>
+        <a href="#">
+          <img src="assets/emoji/art.png" class="emoji-interests" /> 
+          Arts and music
+        </a>
+        <a href="#">
+          <img src="assets/emoji/sport.png" class="emoji-interests" /> 
+          Sport
+        </a>
+      </div>
+    </div>
+    <a href="#" class="follow-me" target="_blank">
+      <span class="follow-text">
+        <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
+        Support the project
+     </span>
+      <span class="developer">
+        <img src="assets/pics/logo.png" />
+        Paypal - Opportunity hacker
+      </span>
+    </a>
+  </div>
+  <div class="main">
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="right-side-button" @click="rightSide = !rightSide">
+         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      </button>
+    </div>
+    <div class="main-container">
+      <div class="profile">
+        <div class="profile-avatar">
+          <img src="assets/pics/users/hmc.png" alt="" class="profile-img">
+          <div class="profile-name">HMC Project Ukraine
+            <h6 style="margin: 0px; font-weight: lighter;">HMC</h6>
+          </div>
+        </div>
+        <img src="https://amatravelinternal.blob.core.windows.net/articles/images/double-decker-london.jpg" alt="" class="profile-cover">
+        <div class="profile-menu">	          
+          <!-- <a class="profile-menu-link active">Timeline</a>
+          <a class="profile-menu-link">Photos</a> -->
+          <input type="checkbox" id="followingButton"/>
+          <input type="checkbox" name="card" id="likeInput" value="likeInput">
+          <label for="likeInput" id="likeInputLabel"></label>
+          <!-- <input type="checkbox" id="followingButton"/> -->
+
+
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-left">
+          <div class="intro box">
+            <div class="intro-title">
+              Information about organization
+            </div>
+            <div class="info">              
+              <div class="info-item">
+                <img src="assets/emoji/dates.png" class="emoji-interests" />              
+                Year of founding <a href="#">1997</a>
+              </div>
+
+              <div class="info-item">
+                <img src="assets/emoji/rainbow.png" class="emoji-interests" />              
+                Type <a href="#">Non-for-profit</a>
+              </div>
+
+              <div class="info-item">
+                <img src="assets/emoji/phone.png" class="emoji-interests" /> 
+                Phone numner <a href="#">+380501234556</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/email.png" class="emoji-interests" /> 
+                Email <a href="#">flex@org.uk</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/internet.png" class="emoji-interests" /> 
+                Website <a href="https://www.concordia.edu.ua/">concordia.edu.ua</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/instagram.png" class="emoji-interests" /> 
+                Instagram <a href="#">instabitch</a>
+              </div>
+
+              <div class="info-item">
+                <img src="assets/emoji/facebook.png" class="emoji-interests" /> 
+                Facebook <a href="#">HMC Project Україна</a>
+              </div>
+              <div class="intro-title" style="margin-top: 20px;">
+                Projects orginized
+              </div>
+
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+              <div class="info-item">
+                <img src="assets/emoji/fairy.png" class="emoji-interests" /> 
+                </svg>
+                Project <a href="#">all</a>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="pages box">
+            <div class="intro-title">
+              You also might like
+              <!-- <button class="intro-menu"></button> -->
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0f" alt="" class="user-img">
+              <div class="username">Chandelio</div>
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=d5849d81af587a09dbcf3f11f6fa122f" alt="" class="user-img">
+              <div class="username">Janet Jolie</div>
+            </div>
+            <div class="user">
+              <img src="https://images.unsplash.com/photo-1546539782-6fc531453083?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="" class="user-img">
+              <div class="username">Patrick Watsons</div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-right">
+          <div class="album box">
+            <div class="status-main">
+              <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" class="status-img" />
+              <div class="album-detail">
+                <div class="album-title"><strong>HMC Project Ukraine</strong> at <span>London, UK</span></div>
+                <div class="album-date">6 hours ago</div>
+              </div>
+              <button class="intro-menu"></button>
+            </div>
+            <div class="album-content">We are happy to announce that we opened our applications for Autumn 2021. So excited to read yours!
+              <div class="album-photos">
+                <img src="https://www.visitbritain.com/sites/default/files/styles/consumer_hero_image_mobile/public/consumer/paragraphs-bundles/image-banner/london_skyline_vb34141644_0.jpg?itok=RIwSzRW6" alt="" class="album-photo" />
+                <div class="album-right">
+                  <img src="https://cdn.shopify.com/s/files/1/0042/3981/8822/articles/Study-medicinea-abroad-in-england.jpg?v=1566559054" alt="" class="album-photo" />
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEmul28iMe2KtvuvjrwrFudB_r0Vq-QWk9_g&usqp=CAU" alt="" class="album-photo" />
+                </div>
+              </div>
+            </div>
+            <div class="album-actions">
+              <div class="options">
+                <span class="reactions" style="z-index: 999999999999999999;">
+                  <!-- <div class="icon-container">
+                    <span data-popup="Like" class="like reaction"></span>
+                  </div> -->
+                  <div class="icon-container">
+                    <span data-popup="Love"class="love reaction"></span>
+                  </div>
+                  <div class="icon-container">
+                    <span data-popup="Like"class="like reaction"></span>
+                  </div>
+                  <div class="icon-container">
+                    <span data-popup="Haha"class="haha reaction"></span>
+                  </div>
+                  <div class="icon-container">
+                    <span data-popup="Wow"class="wow reaction"></span>
+                  </div>
+                  <div class="icon-container">
+                    <span data-popup="Sad"class="sad reaction"></span>
+                  </div>
+                  <div class="icon-container">
+                    <span data-popup="Angry"class="angry reaction"></span>
+                  </div>
+                </span>
+                
+                <span class="button">
+                  React
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side" :class="{ 'active': rightSide }">
+    <div class="account">
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+          <path d="M22 6l-10 7L2 6" />
+        </svg>
+      </button>
+      <button class="account-button">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0" />
+        </svg>
+      </button>
+      <span class="account-user">Steve Jobs
+        <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
+        <span>▼</span>
+      </span>
+    </div>
+    <div class="side-wrapper stories">
+      <div class="side-title">STORIES FEATURING</div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png" alt="" class="user-img">
+        <div class="username">Lisandro Matos
+          <div class="album-date">12 hours ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1153966095444992000/1lpIyHaQ.jpg" alt="" class="user-img">
+        <div class="username">Gvozden Boskovsky
+          <div class="album-date">29 minutes ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png" alt="" class="user-img">
+        <div class="username">Hnek Fortuin
+          <div class="album-date">3 hours ago</div>
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/1102351320567164931/ZCkJgJIH.png" alt="" class="user-img">
+        <div class="username">Lubomir Dvorak
+          <div class="album-date">18 hours ago</div>
+        </div>
+      </div>
+    </div>
+    <div class="side-wrapper contacts">
+      <div class="side-title">PEOPLE FOLLOWING</div>
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="user-img">
+        <div class="username">Future Leader Exchange
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=046c29138c1335ef8edee7daf521ba50" class="user-img">
+        <div class="username">United World Colleges
+          <!-- <div class="user-status offline"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1575084713138-342cae5f8d00?ixlib=rb-1.2.1&auto=format&fit=crop&w=958&q=80" class="user-img">
+        <div class="username">UPSHIFT 
+          <!-- <div class="user-status offline"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.pexels.com/photos/598745/pexels-photo-598745.jpeg?h=350&auto=compress&cs=tinysrgb" class="user-img">
+        <div class="username">HMC Ukraine
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/2452384114/noplz47r59v1uxvyg8ku.png" class="user-img">
+        <div class="username">Ukraine Global Scholars
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://randomuser.me/api/portraits/women/63.jpg" class="user-img">
+        <div class="username">Foundation of Regional Initiatives
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1476493279419-b785d41e38d8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=61eaea85f1aa3d065400179c78163f15" class="user-img">
+        <div class="username">Peace Corps Ukraine
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjI4NDcyNjQxNl5BMl5BanBnXkFtZTgwMzI4OTM3NjM@._V1_UY256_CR13,0,172,256_AL_.jpg" class="user-img">
+        <div class="username">Education USA
+          <!-- <div class="user-status idle"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://images.unsplash.com/photo-1509380836717-c4320ccf1a6f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=e01c8c45a063daaf6d6e571a32bd6c90" class="user-img">
+        <div class="username">iTalent
+          <!-- <div class="user-status"></div> -->
+        </div>
+      </div>
+      <div class="user">
+        <img src="https://pbs.twimg.com/profile_images/737221709267374081/sdwta9Oh.jpg" alt="" class="user-img">
+        <div class="username">Junior Academy of Science of Ukraine
+          <!-- <div class="user-status idle"></div> -->
+        </div>
+      </div>
+    </div>
+    <div class="search-bar right-search">
+      <input type="text" placeholder="Search" />
+      <div class="search-bar-svgs">
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+        </svg>
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469.34 469.34">
+          <path d="M456.84 76.17l-64-64.06c-16.13-16.13-44.18-16.17-60.37.04L45.77 301.67a10.73 10.73 0 00-2.7 4.59L.41 455.73a10.68 10.68 0 0013.19 13.2l149.33-42.7c1.73-.5 3.3-1.42 4.58-2.7l289.33-286.98c8.06-8.07 12.5-18.78 12.5-30.19s-4.44-22.12-12.5-30.2zM285.99 89.74L325.25 129l-205 205-14.7-29.44a10.67 10.67 0 00-9.55-5.9H78.92L286 89.75zM26.2 443.14l13.9-48.64 34.74 34.74-48.64 13.9zm123.14-35.18L98.3 422.54l-51.5-51.5L61.38 320H89.4l18.38 36.77a10.67 10.67 0 004.77 4.77l36.78 18.39v28.03zm21.33-17.54v-17.09c0-4.04-2.28-7.72-5.9-9.54l-29.43-14.7 205-205 39.26 39.26-208.93 207.07zm271.11-268.7l-47.03 46.61L301 74.6l46.59-47c8.06-8.07 22.1-8.07 30.16 0l64 64c4.03 4.03 6.25 9.38 6.25 15.08s-2.22 11.05-6.22 15.05z" /></svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+      <path d="M12 5v14M5 12h14"/>
+    </svg>
+      </div>
+    </div>
+  </div>
+  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js'></script>
+<script  src="/home/kulieshova/op-ha/assets/scripts/main.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+  <script  src="assets/scripts/reaction.js"></script>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>

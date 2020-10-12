@@ -103,15 +103,11 @@ body {
   background-color: #181d2f;
 }
 
-
-
 @media screen and (max-width: 930px) {
   .main {
     width: calc(100% - 58px);
   }
 }
-
-
 
 .logo {
   font-family: "DM Sans", sans-serif;
@@ -124,7 +120,12 @@ body {
   letter-spacing: 4px;
   position: sticky;
   top: 0;
-  background: linear-gradient(to bottom, #151728 0%, #151728 76%, rgba(21, 23, 40, 0) 100%);
+  background: linear-gradient(
+    to bottom,
+    #151728 0%,
+    #151728 76%,
+    rgba(21, 23, 40, 0) 100%
+  );
 }
 
 .side-title {
@@ -296,7 +297,8 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
-.profile-menu-link.active, .profile-menu-link:hover {
+.profile-menu-link.active,
+.profile-menu-link:hover {
   color: #fff;
   background-color: #1b1d2e;
   border-bottom: 3px solid #f57b51;
@@ -458,7 +460,6 @@ body {
   margin-right: 16px;
 }
 
-
 .account-profile {
   width: 28px;
   height: 28px;
@@ -514,7 +515,6 @@ body {
   }
 }
 
-
 .left-side-button {
   display: none;
 }
@@ -527,7 +527,7 @@ body {
     position: relative;
     cursor: pointer;
     height: 60px;
-    background-color: #272a3a80;;
+    background-color: #272a3a80;
     border: 0;
     padding: 0;
     line-height: 0;
@@ -618,23 +618,23 @@ body {
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTUgOSI+Cgk8cGF0aCBmaWxsPSIjMzMzMzMzIiBkPSJNNy44NjcgOC41NzRsLTcuMjItNy4yMi43MDctLjcwOEw3Ljg2NyA3LjE2IDE0LjA1Ljk4bC43MDYuNzA3Ii8+Cjwvc3ZnPgo=");
   background-size: contain;
   -webkit-filter: brightness(5);
-          filter: brightness(5);
+  filter: brightness(5);
   width: 18px;
   height: 12px;
   cursor: pointer;
 }
 .hs__arrows .arrow.disabled:before {
   -webkit-filter: brightness(2);
-          filter: brightness(2);
+  filter: brightness(2);
 }
 .hs__arrows .arrow.arrow-prev:before {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   margin-right: 10px;
 }
 .hs__arrows .arrow.arrow-next:before {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .hs__item {
@@ -642,9 +642,9 @@ body {
   display: -webkit-box;
   position: relative;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .hs__item:last-child:after {
@@ -676,10 +676,9 @@ body {
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: 'Rubik', sans-serif;
-  --font-serif: 'Cardo', serif;
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
 }
-
 
 @media (min-width: 600px) {
   .page-content {
@@ -697,16 +696,18 @@ body {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   overflow: hidden;
   padding: 1rem;
-   height: 300px; 
-   width: 200px;
+  height: 300px;
+  width: 200px;
 
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
   .card {
@@ -714,7 +715,7 @@ body {
   }
 }
 .card:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -725,12 +726,12 @@ body {
   -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
   transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
   transition: transform calc(var(--d) * 1.5) var(--e);
-  transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e),
+    -webkit-transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
-  
 }
 .card:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -738,14 +739,53 @@ body {
   width: 100%;
   height: 200%;
   pointer-events: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(11.7%, rgba(0, 0, 0, 0.009)), color-stop(22.1%, rgba(0, 0, 0, 0.034)), color-stop(31.2%, rgba(0, 0, 0, 0.072)), color-stop(39.4%, rgba(0, 0, 0, 0.123)), color-stop(46.6%, rgba(0, 0, 0, 0.182)), color-stop(53.1%, rgba(0, 0, 0, 0.249)), color-stop(58.9%, rgba(0, 0, 0, 0.32)), color-stop(64.3%, rgba(0, 0, 0, 0.394)), color-stop(69.3%, rgba(0, 0, 0, 0.468)), color-stop(74.1%, rgba(0, 0, 0, 0.54)), color-stop(78.8%, rgba(0, 0, 0, 0.607)), color-stop(83.6%, rgba(0, 0, 0, 0.668)), color-stop(88.7%, rgba(0, 0, 0, 0.721)), color-stop(94.1%, rgba(0, 0, 0, 0.762)), to(rgba(0, 0, 0, 0.79)));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    color-stop(11.7%, rgba(0, 0, 0, 0.009)),
+    color-stop(22.1%, rgba(0, 0, 0, 0.034)),
+    color-stop(31.2%, rgba(0, 0, 0, 0.072)),
+    color-stop(39.4%, rgba(0, 0, 0, 0.123)),
+    color-stop(46.6%, rgba(0, 0, 0, 0.182)),
+    color-stop(53.1%, rgba(0, 0, 0, 0.249)),
+    color-stop(58.9%, rgba(0, 0, 0, 0.32)),
+    color-stop(64.3%, rgba(0, 0, 0, 0.394)),
+    color-stop(69.3%, rgba(0, 0, 0, 0.468)),
+    color-stop(74.1%, rgba(0, 0, 0, 0.54)),
+    color-stop(78.8%, rgba(0, 0, 0, 0.607)),
+    color-stop(83.6%, rgba(0, 0, 0, 0.668)),
+    color-stop(88.7%, rgba(0, 0, 0, 0.721)),
+    color-stop(94.1%, rgba(0, 0, 0, 0.762)),
+    to(rgba(0, 0, 0, 0.79))
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
   transition: -webkit-transform calc(var(--d) * 2) var(--e);
   transition: transform calc(var(--d) * 2) var(--e);
-  transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e),
+    -webkit-transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1) {
   background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
@@ -757,9 +797,9 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   width: 100%;
   padding: 1rem;
   -webkit-transition: -webkit-transform var(--d) var(--e);
@@ -808,57 +848,60 @@ body {
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 
   .content {
     -webkit-transform: translateY(calc(100% - 4.5rem));
-            transform: translateY(calc(100% - 4.5rem));
+    transform: translateY(calc(100% - 4.5rem));
   }
   .content > *:not(.title) {
     opacity: 0;
     -webkit-transform: translateY(1rem);
-            transform: translateY(1rem);
-    -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transform: translateY(1rem);
+    -webkit-transition: opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
     transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
-    transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e),
+      -webkit-transform var(--d) var(--e);
   }
 
   .card:hover,
   .card:focus-within {
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
   }
   .card:hover:before,
   .card:focus-within:before {
     -webkit-transform: translateY(-4%);
-            transform: translateY(-4%);
+    transform: translateY(-4%);
   }
   .card:hover:after,
   .card:focus-within:after {
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
   .card:hover .content,
   .card:focus-within .content {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
   .card:hover .content > *:not(.title),
   .card:focus-within .content > *:not(.title) {
     opacity: 1;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     -webkit-transition-delay: calc(var(--d) / 8);
-            transition-delay: calc(var(--d) / 8);
+    transition-delay: calc(var(--d) / 8);
   }
 
-  .card:focus-within:before, .card:focus-within:after,
+  .card:focus-within:before,
+  .card:focus-within:after,
   .card:focus-within .content,
   .card:focus-within .content > *:not(.title) {
     -webkit-transition-duration: 0s;
-            transition-duration: 0s;
+    transition-duration: 0s;
   }
 }
 .card {
@@ -871,7 +914,7 @@ body {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .card-org {
   position: relative;
@@ -898,28 +941,36 @@ body {
 .card-org.hover .card__background,
 .card-org:hover .card__background {
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
   -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .card__background {
   background-size: cover;
   background-position: center;
   opacity: 0.95;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-filter 0.2s ease;
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out,
+    -webkit-filter 0.2s ease;
   transition: -webkit-transform 0.2s ease-in-out, -webkit-filter 0.2s ease;
   transition: transform 0.2s ease-in-out, filter 0.2s ease;
-  transition: transform 0.2s ease-in-out, filter 0.2s ease, -webkit-transform 0.2s ease-in-out, -webkit-filter 0.2s ease;
+  transition: transform 0.2s ease-in-out, filter 0.2s ease,
+    -webkit-transform 0.2s ease-in-out, -webkit-filter 0.2s ease;
 }
 .card-org.hover .card__shadow,
 .card-org:hover .card__shadow {
   opacity: 0.95;
 }
 .card__shadow {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0,0,0,0.3)), to(#000));
-  background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0, #000 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgba(0, 0, 0, 0.3)),
+    to(#000)
+  );
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0, #000 100%);
   opacity: 0.6;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -927,7 +978,7 @@ body {
 .card-org.hover .card__info,
 .card-org:hover .card__info {
   -webkit-transform: translateY(-37px);
-          transform: translateY(-37px);
+  transform: translateY(-37px);
 }
 .card__info {
   top: auto;
@@ -935,11 +986,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 14px;
   padding: 15px 10px;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -951,11 +1002,11 @@ body {
   line-height: 30px;
   font-weight: 300;
   margin-right: 50%;
-  color: rgba(255,255,255,0.95);
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.95);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.95);
 }
 .card__name:after {
-  content: '';
+  content: "";
   display: block;
   width: 20%;
   height: 2px;
@@ -964,7 +1015,7 @@ body {
 }
 .card__about,
 .card__description {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 8px;
 }
 .card__about {
@@ -988,27 +1039,29 @@ body {
 .card-org.hover .card__follow,
 .card-org:hover .card__follow {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .card__follow {
   top: auto;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   height: 37px;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
   background-color: #f57b51;
   -webkit-transform: translateY(37px);
-          transform: translateY(37px);
-  -webkit-transition: background-color 0.2s ease, -webkit-transform 0.2s ease-in-out;
+  transform: translateY(37px);
+  -webkit-transition: background-color 0.2s ease,
+    -webkit-transform 0.2s ease-in-out;
   transition: background-color 0.2s ease, -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, background-color 0.2s ease;
-  transition: transform 0.2s ease-in-out, background-color 0.2s ease, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease,
+    -webkit-transform 0.2s ease-in-out;
 }
 .card__follow:hover {
   background-color: #f57b51;

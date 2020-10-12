@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Explore</title>
@@ -8,1469 +9,1592 @@
   <!-- <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode"> -->
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="icon" href="assets/pics/logo.png" type="image/png">
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css'>
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="container" x-data="{ rightSide: false, leftSide: false }">
-  <div class="left-side" :class="{'active' : leftSide}">
-    <div class="left-side-button" @click="leftSide = !leftSide">
-      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-  <path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-    </div>
-    <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
-    <div class="side-wrapper">
-      <div class="side-title">MENU</div>
-      <div class="side-menu">
-        <a href="index.html">
-          <ion-icon name="home" style="margin-right: 15px;"></ion-icon>  
-          Home
-        </a>
-        <a href="feed.html">
-          <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
-          Feed
-        </a>
-        <a href="explore.html">
-          <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
-          Explore
-        </a>
-        <a href="my-page.html">
-          <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
-          </svg>
-          My profile
-        </a>
-        <a href="#">
-          <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
-          Settings
-        </a>
+  <!-- partial:index.partial.html -->
+  <div class="container" x-data="{ rightSide: false, leftSide: false }">
+    <div class="left-side" :class="{'active' : leftSide}">
+      <div class="left-side-button" @click="leftSide = !leftSide">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          viewBox="0 0 24 24">
+          <path d="M19 12H5M12 19l-7-7 7-7" /></svg>
       </div>
-    </div>
-    <div class="side-wrapper">
-      <div class="side-title">YOUR INTERESTS</div>
-      <div class="side-menu">
-        <a href="#">
-          <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
-          Self-development
-        </a>
-        <a href="#">
-          <img src="assets/emoji/earth.png" class="emoji-interests" /> 
-          Exchange programs
-        </a>
-        <a href="#">
-          <img src="assets/emoji/books.png" class="emoji-interests" /> 
-          Education
-        </a>
-        <a href="#">
-          <img src="assets/emoji/business.png" class="emoji-interests" /> 
-          Startups and business
-        </a>
-        <a href="#">
-          <img src="assets/emoji/science.png" class="emoji-interests" />   
-          Science and technologies
-        </a>
-        <a href="#">
-          <img src="assets/emoji/raised-hands.png" class="emoji-interests" /> 
-          Social activism
-        </a>
-        <a href="#">
-          <img src="assets/emoji/politics.png" class="emoji-interests" /> 
-          Politics and history
-        </a>
-        <a href="#">
-          <img src="assets/emoji/camp.png" class="emoji-interests" /> 
-          Camps and forums
-        </a>
-        <a href="#">
-          <img src="assets/emoji/equality.png" class="emoji-interests" /> 
-          Gender equality
-        </a>
-        <a href="#">
-          <img src="assets/emoji/speech.png" class="emoji-interests" /> 
-          Linguistics
-        </a>
-        <a href="#">
-          <img src="assets/emoji/art.png" class="emoji-interests" /> 
-          Arts and music
-        </a>
-        <a href="#">
-          <img src="assets/emoji/sport.png" class="emoji-interests" /> 
-          Sport
-        </a>
+      <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span>
       </div>
+      <div class="side-wrapper">
+        <div class="side-title">MENU</div>
+        <div class="side-menu">
+          <a href="index.html">
+            <ion-icon name="home" style="margin-right: 15px;"></ion-icon>
+            Home
+          </a>
+          <a href="feed.html">
+            <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
+            Feed
+          </a>
+          <a href="explore.html">
+            <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
+            Explore
+          </a>
+          <a href="my-page.html">
+            <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
+            </svg>
+            My profile
+          </a>
+          <a href="#">
+            <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
+            Settings
+          </a>
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="side-title">YOUR INTERESTS</div>
+        <div class="side-menu">
+          <a href="#">
+            <img src="assets/emoji/sparkles.png" class="emoji-interests" />
+            Self-development
+          </a>
+          <a href="#">
+            <img src="assets/emoji/earth.png" class="emoji-interests" />
+            Exchange programs
+          </a>
+          <a href="#">
+            <img src="assets/emoji/books.png" class="emoji-interests" />
+            Education
+          </a>
+          <a href="#">
+            <img src="assets/emoji/business.png" class="emoji-interests" />
+            Startups and business
+          </a>
+          <a href="#">
+            <img src="assets/emoji/science.png" class="emoji-interests" />
+            Science and technologies
+          </a>
+          <a href="#">
+            <img src="assets/emoji/raised-hands.png" class="emoji-interests" />
+            Social activism
+          </a>
+          <a href="#">
+            <img src="assets/emoji/politics.png" class="emoji-interests" />
+            Politics and history
+          </a>
+          <a href="#">
+            <img src="assets/emoji/camp.png" class="emoji-interests" />
+            Camps and forums
+          </a>
+          <a href="#">
+            <img src="assets/emoji/equality.png" class="emoji-interests" />
+            Gender equality
+          </a>
+          <a href="#">
+            <img src="assets/emoji/speech.png" class="emoji-interests" />
+            Linguistics
+          </a>
+          <a href="#">
+            <img src="assets/emoji/art.png" class="emoji-interests" />
+            Arts and music
+          </a>
+          <a href="#">
+            <img src="assets/emoji/sport.png" class="emoji-interests" />
+            Sport
+          </a>
+        </div>
+      </div>
+      <a href="#" class="follow-me" target="_blank">
+        <span class="follow-text">
+          <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;" />
+          Support the project
+        </span>
+        <span class="developer">
+          <img src="assets/pics/logo.png" />
+          Paypal - Opportunity hacker
+        </span>
+      </a>
     </div>
-    <a href="#" class="follow-me" target="_blank">
-      <span class="follow-text">
-        <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
-        Support the project
-     </span>
-      <span class="developer">
-        <img src="assets/pics/logo.png" />
-        Paypal - Opportunity hacker
-      </span>
-    </a>
-  </div>
-  <div class="main">
-    <div class="search-bar">
-      <input type="text" placeholder="Search" />
+    <div class="main">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
         <span class="account-user">Steve Jobs
-          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
+          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt=""
+            class="account-profile" alt="">
           <span>▼</span>
         </span>
+      </div>
+
+      <div class="main-container">
+
+        <button id="settings-explore" onclick="myFunction()">
+          <ion-icon name="options" style="font-size: 20px; margin-bottom: -5px;"></ion-icon> filter results
+        </button>
+
+        <div id="filters">
+          <form action="#">
+
+            <h4 style="margin: 0px 0px 5px 0px;">Filter by interests</h4>
+            <div class="filters-flex" id="interests-div-wrapper">
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/sparkles.png"> Self-development
+                <input type="checkbox" class="interests-filters-input" value="self-development"
+                  name="interests-filters">
+              </label>
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/earth.png">Exchange programs and travelling
+                <input type="checkbox" class="interests-filters-input" value="travelling" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/books.png">Education
+                <input type="checkbox" class="interests-filters-input" value="education" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/business.png">Startups and business
+                <input type="checkbox" class="interests-filters-input" value="business" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/science.png">Science and technology
+                <input type="checkbox" class="interests-filters-input" value="science" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/raised-hands.png">Volunteering and social activism
+                <input type="checkbox" class="interests-filters-input" value="volunteering" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/politics.png">Politics and history
+                <input type="checkbox" class="interests-filters-input" value="politics" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/camp.png">Camps and forums
+                <input type="checkbox" class="interests-filters-input" value="camps" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/equality.png">Gender equality
+                <input type="checkbox" class="interests-filters-input" value="gender-equality" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/speech.png">Linguistics
+                <input type="checkbox" class="interests-filters-input" value="linguistics" name="interests-filters">
+              </label>
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/art.png">Arts and music
+                <input type="checkbox" class="interests-filters-input" value="art" name="interests-filters">
+              </label>
+
+
+              <label class="interests-filters checkbox-inline interests-filters-active"><img
+                  src="assets/emoji/sport.png">Sport
+                <input type="checkbox" class="interests-filters-input" value="sport" name="interests-filters">
+              </label>
+
+
+            </div>
+
+            <h4 style="margin: 20px 0px 5px 0px;">Filter by location</h4>
+            <div class="filters-flex">
+
+              <label class="interests-filters">My region only
+                <input type="radio" class="interests-filters-input" value="my-region" name="location">
+              </label>
+
+              <label class="interests-filters">All Ukraine
+                <input type="radio" class="interests-filters-input" value="ukraine" name="location">
+              </label>
+
+              <label class="interests-filters">Abroad
+                <input type="radio" class="interests-filters-input" value="abroad" name="location">
+              </label>
+
+            </div>
+
+            <h4 style="margin: 20px 0px 5px 0px;">Filter by sex</h4>
+            <div class="filters-flex">
+
+              <label class="interests-filters">Male
+                <input type="radio" class="interests-filters-input" value="male" name="sex">
+              </label>
+
+              <label class="interests-filters">Female
+                <input type="radio" class="interests-filters-input" value="female" name="sex">
+              </label>
+
+              <label class="interests-filters">Non-binary
+                <input type="radio" class="interests-filters-input" value="non-binary" name="sex">
+              </label>
+
+            </div>
+
+            <h4 style="margin: 20px 0px 5px 0px;">Filter by inclusion</h4>
+            <div class="filters-flex">
+
+              <label class="interests-filters">Inclusive
+                <input type="radio" class="interests-filters-input" value="inclusive" name="inclusion">
+              </label>
+
+              <label class="interests-filters">Non-inclusive
+                <input type="radio" class="interests-filters-input" value="non-inclusive" name="inclusion">
+              </label>
+
+            </div>
+
+            <h4 style="margin: 20px 0px 5px 0px;">Filter by age</h4>
+            <div class="filters-flex">
+
+              <label class="interests-filters-enter" style="margin-left: -10px;">Enter the age of a participant
+                <input type="number" id="tentacles" name="tentacles" min="1" max="100" id="age">
+              </label>
+
+            </div>
+
+            <h4 style="margin: 20px 0px 5px 0px;">Filter by price</h4>
+            <div class="filters-flex">
+
+              <label class="interests-filters">Free
+                <input type="radio" class="interests-filters-input" value="free" name="price">
+              </label>
+
+              <label class="interests-filters">Paid
+                <input type="radio" class="interests-filters-input" value="paid" name="price" id="paid-check">
+              </label>
+
+              <label class="interests-filters-enter">If you chose paid, how much? Enter maximum amount in hryvnas
+                <input type="number" id="tentacles" name="tentacles" min="0" max="999999" id="amount">
+              </label>
+
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Self-development-->
+        <div class="hs__wrapper everything self-development">
+          <h3 style="margin-top: 0px;">Self-development events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Exchange programs-->
+        <div class="hs__wrapper everything travelling">
+          <h3 style="margin-top: 0px;">Exchange programs and travelling<div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="hs__wrapper everything education">
+          <h3 style="margin-top: 0px;">Education programs and events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Startups and business-->
+        <div class="hs__wrapper everything business">
+          <h3 style="margin-top: 0px;">Startups and business events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Volunteering events-->
+        <div class="hs__wrapper everything volunteering">
+          <h3 style="margin-top: 0px;">Volunteering and social activism events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Science and research-->
+        <div class="hs__wrapper everything science">
+          <h3 style="margin-top: 0px;">Science and technologies events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+
+        <!-- Politics-->
+        <div class="hs__wrapper everything politics">
+          <h3 style="margin-top: 0px;">Politics and history events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Camp-->
+        <div class="hs__wrapper everything camps">
+          <h3 style="margin-top: 0px;">Camps and forums <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Gender Equality-->
+        <div class="hs__wrapper everything gender-equality">
+          <h3 style="margin-top: 0px;">Gender equality and femenism events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Language learning-->
+        <div class="hs__wrapper everything linguistics">
+          <h3 style="margin-top: 0px;">Linguistics events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+        </div>
+
+        <!-- Art-->
+        <div class="hs__wrapper everything art">
+          <h3 style="margin-top: 0px;">Arts and music events <div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Sport-->
+        <div class="hs__wrapper everything sport">
+          <h3 style="margin-top: 0px;">Sport events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a
+                class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="card">
+                <div class="content">
+                  <h2 class="title">Mountain View</h2>
+                  <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed
+                    it, the mountains</p>
+                  <button class="btn">View Trips</button>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }">
+      </div>
     </div>
-    
-    <div class="main-container">
-      
-      <button id="settings-explore" onclick="myFunction()"><ion-icon name="options" style = "font-size: 20px; margin-bottom: -5px;"></ion-icon> filter results</button>
-      
-      <div id="filters">
-        <form action="#">
-          
-          <h4 style="margin: 0px 0px 5px 0px;">Filter by interests</h4>
-          <div class="filters-flex" id="interests-div-wrapper">
 
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/sparkles.png"> Self-development
-              <input type="checkbox" class="interests-filters-input" value="self-development" name="interests-filters">
-            </label>
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/earth.png">Exchange programs and travelling
-              <input type="checkbox" class="interests-filters-input" value="travelling" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/books.png">Education
-              <input type="checkbox" class="interests-filters-input" value="education" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/business.png">Startups and business
-              <input type="checkbox" class="interests-filters-input" value="business" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/science.png">Science and technology
-              <input type="checkbox" class="interests-filters-input" value="science" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/raised-hands.png">Volunteering and social activism
-              <input type="checkbox" class="interests-filters-input" value="volunteering" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/politics.png">Politics and history
-              <input type="checkbox" class="interests-filters-input" value="politics" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/camp.png">Camps and forums
-              <input type="checkbox" class="interests-filters-input" value="camps" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/equality.png">Gender equality
-              <input type="checkbox" class="interests-filters-input" value="gender-equality" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active"><img src="assets/emoji/speech.png">Linguistics
-              <input type="checkbox" class="interests-filters-input" value="linguistics" name="interests-filters">
-            </label>
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/art.png">Arts and music 
-              <input type="checkbox" class="interests-filters-input" value="art" name="interests-filters">
-            </label>
-
-
-            <label class="interests-filters checkbox-inline interests-filters-active" ><img src="assets/emoji/sport.png">Sport
-              <input type="checkbox" class="interests-filters-input" value="sport" name="interests-filters">
-            </label>
-
-
-          </div>
-
-          <h4 style="margin: 20px 0px 5px 0px;">Filter by location</h4>
-          <div class="filters-flex">
-
-            <label class="interests-filters" >My region only
-              <input type="checkbox" class="interests-filters-input" value="my-region" name="location">
-            </label>
-
-            <label class="interests-filters" >All Ukraine
-              <input type="checkbox" class="interests-filters-input" value="ukraine" name="location">
-            </label>
-
-            <label class="interests-filters" >Abroad
-              <input type="checkbox" class="interests-filters-input" value="abroad" name="location">
-            </label>
-
-          </div>
-
-          <h4 style="margin: 20px 0px 5px 0px;">Filter by sex</h4>
-          <div class="filters-flex">
-
-            <label class="interests-filters" >Male
-              <input type="checkbox" class="interests-filters-input" value="male" name="sex">
-            </label>
-
-            <label class="interests-filters" >Female
-              <input type="checkbox" class="interests-filters-input" value="female" name="sex">
-            </label>
-
-            <label class="interests-filters" >Non-binary
-              <input type="checkbox" class="interests-filters-input" value="non-binary" name="sex">
-            </label>
-
-          </div>
-
-          <h4 style="margin: 20px 0px 5px 0px;">Filter by inclusion</h4>
-          <div class="filters-flex">
-
-            <label class="interests-filters" >Inclusive
-              <input type="checkbox" class="interests-filters-input" value="inclusive" name="inclusion">
-            </label>
-
-            <label class="interests-filters" >Non-inclusive
-              <input type="checkbox" class="interests-filters-input" value="non-inclusive" name="inclusion">
-            </label>
-
-          </div>
-
-          <h4 style="margin: 20px 0px 5px 0px;">Filter by age</h4>
-          <div class="filters-flex">
-
-            <label class="interests-filters-enter" style="margin-left: -10px;">Enter the age of a participant
-              <input type="number" id="tentacles" name="tentacles" min="1" max="100" id="age">
-            </label>
-
-          </div>
-
-          <h4 style="margin: 20px 0px 5px 0px;">Filter by price</h4>
-          <div class="filters-flex">
-
-            <label class="interests-filters" >Free
-              <input type="checkbox" class="interests-filters-input" value="free" name="price">
-            </label>
-
-            <label class="interests-filters" >Paid
-              <input type="checkbox" class="interests-filters-input" value="paid" name="price" id="paid-check">
-            </label>
-            
-            <label class="interests-filters-enter">If you chose paid, how much? Enter maximum amount in hryvnas
-              <input type="number" id="tentacles" name="tentacles" min="0" max="999999" id="amount">
-            </label>
-              
-          </div>
-          <div class="filters-flex" style="justify-content: center;">
-          <!-- <button type="submit" id="filters-button">Filter results!</button>   -->
-          <a href="" class="rocket-button">
-            <div class="default">Filter results</div>
-            <div class="success">
-                <svg>
-                    <use xlink:href="#check">
-                </svg>
-                <div>Done!</div>
-            </div>
-            <div class="animation">
-                <div class="rocket">
-                    <svg>
-                        <use xlink:href="#rocket">
-                    </svg>
-                </div>
-                <div class="smoke">
-                    <i></i><i></i><i></i><i></i><i></i><i></i>
-                </div>
-            </div>
-        </a>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11" id="check">
-                <polyline stroke="currentColor" points="1 5.5 5 9.5 12 1.5"></polyline>
-            </symbol>
-            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 36" id="rocket">
-                <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 L8.66666667,31 C4.22222222,19.0350877 5.33333333,8.70175439 12,0 Z" fill="var(--rocket)"></path>
-                <path d="M12,0 C5.33333333,8.70175439 4.22222222,19.0350877 8.66666667,31 C6.72222222,17.9473684 7.83333333,7.61403509 12,0 Z" fill="var(--rocket-shadow-left)"></path>
-                <path d="M12,0 C18.6666667,8.70175439 19.7777778,19.0350877 15.3333333,31 C17.2777778,17.9473684 16.1666667,7.61403509 12,0 Z" fill="var(--rocket-shadow-right)"></path>
-                <path d="M22.2399372,27.25 C21.2403105,25.558628 19.4303122,23.808628 16.21,22 L15,31 L17.6512944,31 C18.2564684,31 18.8216022,31.042427 19.1572924,31.5292747 L21.7379379,35.271956 C22.0515593,35.7267976 22.5795404,36 23.1449294,36 C23.5649145,36 23.9142153,35.7073938 23.9866527,35.3215275 L24,35.146217 L23.9987214,35.1196135 C23.7534506,31.4421183 23.1671892,28.8189138 22.2399372,27.25 Z" fill="var(--rocket-wing-right)"></path>
-                <path d="M1.76006278,27.25 C2.75968951,25.558628 4.56968777,23.808628 7.79,22 L9,31 L6.34870559,31 C5.74353157,31 5.17839777,31.042427 4.84270762,31.5292747 L2.2620621,35.271956 C1.94844071,35.7267976 1.42045963,36 0.855070627,36 C0.435085457,36 0.0857846604,35.7073938 0.0133472633,35.3215275 L0,35.146217 L0.00127855763,35.1196135 C0.24654935,31.4421183 0.832810758,28.8189138 1.76006278,27.25 Z" fill="var(--rocket-wing-left)"></path>
-                <circle fill="var(--rocket-window-shadow)" cx="12" cy="12" r="3"></circle>
-                <circle fill="var(--rocket-window)" cx="12" cy="12" r="2.5"></circle>
-                <path d="M15.6021597,5.99977504 L8.39784027,5.99977504 C8.54788101,5.6643422 8.70496315,5.3309773 8.86908669,4.99968036 L15.1309133,4.99968036 C15.2950369,5.3309773 15.452119,5.6643422 15.6021597,5.99977504 Z" fill-opacity="0.3" fill="var(--rocket-line)"></path>
-            </symbol>
-        </svg>
-          </div>
-          
-
-        </form>
-      </div>
-
-      <!-- Self-development-->
-      <div class="hs__wrapper everything self-development">
-        <h3 style="margin-top: 0px;">Self-development events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Exchange programs-->
-      <div class="hs__wrapper everything travelling">
-        <h3 style="margin-top: 0px;">Exchange programs and travelling<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Education -->
-      <div class="hs__wrapper everything education" >
-        <h3 style="margin-top: 0px;">Education programs and events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Startups and business-->
-      <div class="hs__wrapper everything business">
-        <h3 style="margin-top: 0px;">Startups and business events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Volunteering events-->
-      <div class="hs__wrapper everything volunteering">
-        <h3 style="margin-top: 0px;">Volunteering and social activism events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-            <!-- Science and research-->
-            <div class="hs__wrapper everything science">
-              <h3 style="margin-top: 0px;">Science and technologies events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-              <ul class="hs">
-                
-      
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-      
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-      
-                <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>          <li class="hs__item"> 
-                  <div class="card">
-                    <div class="content">
-                      <h2 class="title">Mountain View</h2>
-                      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                      <button class="btn">View Trips</button>
-                    </div>
-                  </div>
-                </li>
-      
-                
-      
-              </ul>
-            </div>
-      
-
-      <!-- Politics-->
-      <div class="hs__wrapper everything politics">
-        <h3 style="margin-top: 0px;">Politics and history events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Camp-->
-      <div class="hs__wrapper everything camps">
-        <h3 style="margin-top: 0px;">Camps and forums <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Gender Equality-->
-      <div class="hs__wrapper everything gender-equality">
-        <h3 style="margin-top: 0px;">Gender equality and femenism events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Language learning-->
-      <div class="hs__wrapper everything linguistics">
-        <h3 style="margin-top: 0px;">Linguistics events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          
-
-        </ul>
-      </div>
-
-      <!-- Art-->
-      <div class="hs__wrapper everything art">
-        <h3 style="margin-top: 0px;">Arts and music events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-      <!-- Sport-->
-      <div class="hs__wrapper everything sport">
-        <h3 style="margin-top: 0px;">Sport events <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-        <ul class="hs">
-          
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>          
-          <li class="hs__item"> 
-            <div class="card">
-              <div class="content">
-                <h2 class="title">Mountain View</h2>
-                <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-                <button class="btn">View Trips</button>
-              </div>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-  </div>
-  
-  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
-</div>
-
-<!-- partial -->
-  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-  <script src='https://wzrd.in/standalone/charming@latest'></script>
-  <script>
-    const d = 40;
-
-document.querySelectorAll('.rocket-button').forEach(elem => {
-
-    elem.querySelectorAll('.default, .success > div').forEach(text => {
-        charming(text);
-        text.querySelectorAll('span').forEach((span, i) => {
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src='https://wzrd.in/standalone/charming@latest'></script>
+    <script>
+      const d = 40;
+
+      document.querySelectorAll('.rocket-button').forEach(elem => {
+
+        elem.querySelectorAll('.default, .success > div').forEach(text => {
+          charming(text);
+          text.querySelectorAll('span').forEach((span, i) => {
             span.innerHTML = span.textContent == ' ' ? '&nbsp;' : span.textContent;
             span.style.setProperty('--d', i * d + 'ms');
             span.style.setProperty('--ds', text.querySelectorAll('span').length * d - d - i * d + 'ms');
+          });
         });
-    });
 
-    elem.addEventListener('click', e => {
-        e.preventDefault();
-        if(elem.classList.contains('animated')) {
+        elem.addEventListener('click', e => {
+          e.preventDefault();
+          if (elem.classList.contains('animated')) {
             return;
-        }
-        elem.classList.add('animated');
-        elem.classList.toggle('live');
-        setTimeout(() => {
+          }
+          elem.classList.add('animated');
+          elem.classList.toggle('live');
+          setTimeout(() => {
             elem.classList.remove('animated');
-        }, 2400);
-    });
+          }, 2400);
+        });
 
-});
-  </script>
-  <script src="assets/scripts/main.js"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-  <script>
-
-    $(function(){
+      });
+    </script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+      $(function () {
         $('#interests-div-wrapper input[type="checkbox"].interests-filters-input').attr('checked', 'checked');
-    });
+      });
 
-    $(document).ready(function(){
-    $('input[type="checkbox"].interests-filters-input').click(function(){
-        var inputValue = $(this).attr("value");
-        $("." + inputValue).toggle();
-    });
-});
-  </script>
+      $(document).ready(function () {
+        $('input[type="checkbox"].interests-filters-input').click(function () {
+          var inputValue = $(this).attr("value");
+          $("." + inputValue).toggle();
+        });
+      });
+    </script>
 </body>
+
 </html>

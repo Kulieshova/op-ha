@@ -648,6 +648,11 @@ hr {
   visibility: hidden;
 }
 
+#inter-select {
+  display: none; /*hide original SELECT element:*/
+  visibility: hidden;
+}
+
 .select-selected {
   background-color: #f57b51;
   width: 250px;
@@ -712,6 +717,12 @@ hr {
 }
 
 #oblast {
+  width: 100px;
+  overflow-y: scroll;
+  background-color: #f57b51;
+}
+
+#interests-select {
   width: 100px;
   overflow-y: scroll;
   background-color: #f57b51;

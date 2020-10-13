@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container-c" x-data="{ rightSide: false, leftSide: false }">
+<div class="container" x-data="{ rightSide: false, leftSide: false }">
   <div class="left-side" :class="{'active' : leftSide}">
     <div class="left-side-button" @click="leftSide = !leftSide">
       <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -134,7 +134,39 @@
               </h5>
               <h5 style="margin: 0px;">
                 Project's type<br>
-                <input type="text" placeholder="e.g. vebinar, camp, festival etc." class="input-settings"/>
+                <div class="custom-select" style="width:100%; padding: 0px; margin-top: 0px;">                
+                  <select id="regions" name="location" required>
+                      <div id="oblast">
+                          <option value="0">Select your region</option>
+                          <option value="Cherkasy">vebinar</option>
+                          <option value="Chernihiv">camp</option>
+                          <option value="Chernivtsi">Chernivtsi Oblast</option>
+                          <option value="Dnipropetrovsk">Dnipropetrovsk Oblast</option>
+                          <option value="Donetsk">Donetsk Oblast</option>
+                          <option value="Ivano-Frankivsk">Ivano-Frankivsk Oblast</option>
+                          <option value="Kharkiv">Kharkiv Oblast</option>
+                          <option value="Kherson">Kherson Oblast</option>
+                          <option value="Khmelnytskyi">Khmelnytskyi Oblast</option>
+                          <option value="Kyiv">Kyiv Oblast</option>
+                          <option value="Kirovohrad">Kirovohrad Oblast</option>
+                          <option value="Luhansk">Luhansk Oblast</option>
+                          <option value="Lviv">Lviv Oblast</option>
+                          <option value="Mykolaiv">Mykolaiv Oblast</option>
+                          <option value="Odessa">Odessa Oblast</option>
+                          <option value="Poltava">Poltava Oblast</option>
+                          <option value="Rivne">Rivne Oblast</option>
+                          <option value="Sumy">Sumy Oblast</option>
+                          <option value="Ternopil">Ternopil Oblast</option>
+                          <option value="Vinnytsia">Vinnytsia Oblast</option>
+                          <option value="Volyn">Volyn Oblast</option>
+                          <option value="Zakarpattia">Zakarpattia Oblast</option>
+                          <option value="Zaporizhia">Zaporizhia Oblast</option>
+                          <option value="Zhytomyr">Zhytomyr Oblast</option>
+                          <option value="Crimea">Crimea</option>
+                          <option value="other">I'm from another country</option>                            
+                      </div>
+                  </select>
+              </div>
               </h5>
               <h5 style="margin: 0px;">
                 Project's short summary<br>

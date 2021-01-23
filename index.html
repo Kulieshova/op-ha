@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>User</title>
@@ -9,132 +10,127 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="icon" href="assets/pics/logo.png" type="image/png">
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="container" x-data="{ rightSide: false, leftSide: false }">
-  <div class="left-side" :class="{'active' : leftSide}">
-    <div class="left-side-button" @click="leftSide = !leftSide">
-      <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-  <path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-    </div>
-    <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span></div>
-    <div class="side-wrapper">
-      <div class="side-title">MENU</div>
-      <div class="side-menu">
-        <a href="index.html">
-          <ion-icon name="home" style="margin-right: 15px;"></ion-icon>  
-          Home
-        </a>
-        <a href="feed.html">
-          <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
-          Feed
-        </a>
-        <a href="explore.html">
-          <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
-          Explore
-        </a>
-        <a href="my-page.html">
-          <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
-          </svg>
-          My profile
-        </a>
-        <a href="#">
-          <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
-          Settings
-        </a>
+  <!-- partial:index.partial.html -->
+  <div class="container" x-data="{ rightSide: false, leftSide: false }">
+    <div class="left-side" :class="{'active' : leftSide}">
+      <div class="left-side-button" @click="leftSide = !leftSide">
+        <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          viewBox="0 0 24 24">
+          <path d="M19 12H5M12 19l-7-7 7-7" /></svg>
       </div>
-    </div>
-    <div class="side-wrapper">
-      <div class="side-title">YOUR INTERESTS</div>
-      <div class="side-menu">
-        <a href="#">
-          <img src="assets/emoji/sparkles.png" class="emoji-interests" /> 
-          Self-development
-        </a>
-        <a href="#">
-          <img src="assets/emoji/earth.png" class="emoji-interests" /> 
-          Exchange programs
-        </a>
-        <a href="#">
-          <img src="assets/emoji/books.png" class="emoji-interests" /> 
-          Education
-        </a>
-        <a href="#">
-          <img src="assets/emoji/business.png" class="emoji-interests" /> 
-          Startups and business
-        </a>
-        <a href="#">
-          <img src="assets/emoji/science.png" class="emoji-interests" />   
-          Science and technologies
-        </a>
-        <a href="#">
-          <img src="assets/emoji/raised-hands.png" class="emoji-interests" /> 
-          Social activism
-        </a>
-        <a href="#">
-          <img src="assets/emoji/politics.png" class="emoji-interests" /> 
-          Politics and history
-        </a>
-        <a href="#">
-          <img src="assets/emoji/camp.png" class="emoji-interests" /> 
-          Camps and forums
-        </a>
-        <a href="#">
-          <img src="assets/emoji/equality.png" class="emoji-interests" /> 
-          Gender equality
-        </a>
-        <a href="#">
-          <img src="assets/emoji/speech.png" class="emoji-interests" /> 
-          Linguistics
-        </a>
-        <a href="#">
-          <img src="assets/emoji/art.png" class="emoji-interests" /> 
-          Arts and music
-        </a>
-        <a href="#">
-          <img src="assets/emoji/sport.png" class="emoji-interests" /> 
-          Sport
-        </a>
+      <div class="logo">OPPORTUNITY<spam style="color:#15172800">.</spam><span style="color: #f57b51;">HACKER</span>
       </div>
-    </div>
-    <div class="side-wrapper">
-      <div class="side-title">DONORS</div>
-      <div class="side-menu">
-        <a href="#">
-          <img src="assets/pics/USAID.png" style="width: 100%; height: auto;"/> 
-        </a>
-        <a href="#">
-          <img src="assets/pics/fond.png" style="width: 100%; height: auto;"/> 
-        </a>
-        <a href="#">
-          <img src="assets/pics/upshift.png" style="width: 100%; height: auto;"/> 
-        </a>
+      <div class="side-wrapper">
+        <div class="side-title">MENU</div>
+        <div class="side-menu">
+          <a href="index.html">
+            <ion-icon name="home" style="margin-right: 15px;"></ion-icon>
+            Home
+          </a>
+          <a href="feed.html">
+            <ion-icon name="newspaper" style="margin-right: 15px;"></ion-icon>
+            Feed
+          </a>
+          <a href="explore.html">
+            <ion-icon name="search" style="margin-right: 15px;"></ion-icon>
+            Explore
+          </a>
+          <a href="my-page.html">
+            <ion-icon name="person" style="margin-right: 15px;"></ion-icon>
+            </svg>
+            My profile
+          </a>
+          <a href="settings.html">
+            <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
+            Settings
+          </a>
+        </div>
       </div>
+      <div class="side-wrapper">
+        <div class="side-title">YOUR INTERESTS</div>
+        <div class="side-menu">
+          <a href="#">
+            <img src="assets/emoji/sparkles.png" class="emoji-interests" />
+            Self-development
+          </a>
+          <a href="#">
+            <img src="assets/emoji/earth.png" class="emoji-interests" />
+            Exchange programs
+          </a>
+          <a href="#">
+            <img src="assets/emoji/books.png" class="emoji-interests" />
+            Education
+          </a>
+          <a href="#">
+            <img src="assets/emoji/business.png" class="emoji-interests" />
+            Startups and business
+          </a>
+          <a href="#">
+            <img src="assets/emoji/science.png" class="emoji-interests" />
+            Science and technologies
+          </a>
+          <a href="#">
+            <img src="assets/emoji/raised-hands.png" class="emoji-interests" />
+            Social activism
+          </a>
+          <a href="#">
+            <img src="assets/emoji/politics.png" class="emoji-interests" />
+            Politics and history
+          </a>
+          <a href="#">
+            <img src="assets/emoji/camp.png" class="emoji-interests" />
+            Camps and forums
+          </a>
+          <a href="#">
+            <img src="assets/emoji/equality.png" class="emoji-interests" />
+            Gender equality
+          </a>
+          <a href="#">
+            <img src="assets/emoji/speech.png" class="emoji-interests" />
+            Linguistics
+          </a>
+          <a href="#">
+            <img src="assets/emoji/art.png" class="emoji-interests" />
+            Arts and music
+          </a>
+          <a href="#">
+            <img src="assets/emoji/sport.png" class="emoji-interests" />
+            Sport
+          </a>
+        </div>
+      </div>
+      <a href="#" class="follow-me" target="_blank">
+        <span class="follow-text">
+          <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;" />
+          Support the project
+        </span>
+        <span class="developer">
+          <img src="assets/pics/logo.png" />
+          Paypal - Opportunity hacker
+        </span>
+      </a>
     </div>
-    <a href="#" class="follow-me" target="_blank">
-      <span class="follow-text">
-        <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;"/> 
-        Support the project
-     </span>
-      <span class="developer">
-        <img src="assets/pics/logo.png" />
-        Paypal - Opportunity hacker
-      </span>
-    </a>
-  </div>
-  <div class="main">
-    <div class="search-bar">
-      <input type="text" placeholder="Search" />
+    <div class="main">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
         <span class="account-user">Steve Jobs
-          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt="" class="account-profile" alt="">
+          <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg" alt=""
+            class="account-profile" alt="">
           <span>▼</span>
         </span>
-    </div>
-    
-    <div class="main-container">
+      </div>
 
-      <!-- <div class="hs__wrapper">
+      <div class="main-container">
+
+        <!-- <div class="hs__wrapper">
         <h3 style="margin-top: 0px;">Streaming now <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           <li class="hs__item"> 
@@ -253,8 +249,8 @@
         </ul>
       </div> -->
 
-      <!-- Recommended -->
-      <!-- <div class="hs__wrapper">
+        <!-- Recommended -->
+        <!-- <div class="hs__wrapper">
         <h3 style="margin-top: 0px;">Special for you <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
         <ul class="hs">
           <li class="hs__item"> 
@@ -357,8 +353,8 @@
         </ul>
       </div> -->
 
-            <!-- Popular -->
-            <!-- <div class="hs__wrapper">
+        <!-- Popular -->
+        <!-- <div class="hs__wrapper">
               <h3 style="margin-top: 0px;">Popular this week <div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
               <ul class="hs">
                 <li class="hs__item"> 
@@ -458,473 +454,623 @@
                 </li>
               </ul>
             </div> -->
-         
-            <!-- Popular -->
-            <div class="hs__wrapper">
-              <h3 style="margin-top: 0px;">Speacial for you<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-              <ul class="hs">
-                
-      
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://www.concordia.edu.ua/wp-content/uploads/2019/09/photo-2.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
 
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
+        <!-- Popular -->
+        <div class="hs__wrapper">
+          <h3 style="margin-top: 0px;">Speacial for you<div class="hs__arrows"><a
+                class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
 
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>                
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                
 
-              </ul>
-            </div>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://scontent.fdok1-1.fna.fbcdn.net/v/t1.0-9/78401184_1240848342790347_4795287495145160704_o.jpg?_nc_cat=105&_nc_sid=e3f864&_nc_ohc=03gdIMgn_YkAX_e6M1D&_nc_ht=scontent.fdok1-1.fna&oh=c35e58b1eb9b94ef6c0af4866b768aab&oe=5FB38FAD&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">Ukraine Global Scholars</div>
+                    <div class="card__about">@ukraineglobalscholars</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
 
-            <div class="hs__wrapper">
-              <h3 style="margin-top: 0px;">Speacial for you<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a class="arrow arrow-next"></a></div></h3>
-              <ul class="hs">
-                
-      
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://www.concordia.edu.ua/wp-content/uploads/2019/09/photo-2.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://images.musement.com/cover/0002/49/big-ben-westminster-bridge-on-river-thames-in-london-jpg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">HMC Projects</div>
+                    <div class="card__about">@concordia.edu</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
 
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://images.musement.com/cover/0002/49/big-ben-westminster-bridge-on-river-thames-in-london-jpg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://scontent.fdok1-1.fna.fbcdn.net/v/t31.0-8/19955942_1386381618104798_7669142823905919032_o.jpg?_nc_cat=107&_nc_sid=730e14&_nc_ohc=hyMWavDL_WsAX-f2ibG&_nc_ht=scontent.fdok1-1.fna&oh=db4cfd2884ed087ae36331078532559c&oe=5FB32066&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">CACTUS Forum</div>
+                    <div class="card__about">@cactus.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
 
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://www.scottishspca.org/sites/default/files/styles/full_content/public/2019-09/Buying%20a%20cat%201000x600.jpeg?itok=nvUseKh2&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>                
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                <li class="hs__item"> 
-                  <div class="container-user"><a class="card-org" href="#" taget="_blank">
-                    <div class="card__background" style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)"></div>
-                    <div class="card__shadow"></div>
-                    <div class="card__info">
-                      <div class="card__name">FLEX Ukraine</div>
-                      <div class="card__about">@flex.ua</div>
-                      <div class="card__description">Future Leaders Exchange is a scholarship student exchange program administered by the U.S. Department of State through funding from the Freedom Support Act</div>
-                    </div>
-                    <div class="card__follow"><span>follow</span></div></a>
-                </div>
-                </li>
-                
 
-              </ul>
-            </div>
-  </div>
-  
-  <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }"></div>
-</div>
+          </ul>
+        </div>
 
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-  <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-  <script src="assets/scripts/main.js"></script>
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <div class="hs__wrapper">
+          <h3 style="margin-top: 0px;">Popular now<div class="hs__arrows"><a class="arrow disabled arrow-prev"></a><a
+                class="arrow arrow-next"></a></div>
+          </h3>
+          <ul class="hs">
+
+
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://images.musement.com/cover/0002/49/big-ben-westminster-bridge-on-river-thames-in-london-jpg_header-148518.jpeg?w=1200&h=630&q=95&fit=crop&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">HMC Projects</div>
+                    <div class="card__about">@concordia.edu</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://scontent.fdok1-1.fna.fbcdn.net/v/t1.0-9/78089084_802195396866662_226093933229244416_o.jpg?_nc_cat=105&_nc_sid=730e14&_nc_ohc=FwhiNrT6g0QAX8bn63E&_nc_ht=scontent.fdok1-1.fna&oh=2e0039797d43e6da09eb110558f6c48d&oe=5FB27FA9&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">UPSHIFT Ukraine</div>
+                    <div class="card__about">@upshift</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+            <li class="hs__item">
+              <div class="container-user"><a class="card-org" href="#" taget="_blank">
+                  <div class="card__background"
+                    style="background-image: url(&quot;https://school.sii.org.ua/wp-content/uploads/2016/10/FLEX-for-press-release.jpg&quot;)">
+                  </div>
+                  <div class="card__shadow"></div>
+                  <div class="card__info">
+                    <div class="card__name">FLEX Ukraine</div>
+                    <div class="card__about">@flex.ua</div>
+                    <div class="card__description">Future Leaders Exchange is a scholarship student exchange program
+                      administered by the U.S. Department of State through funding from the Freedom Support Act</div>
+                  </div>
+                  <div class="card__follow"><span>follow</span></div>
+                </a>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay" @click="rightSide = false; leftSide = false" :class="{ 'active': rightSide || leftSide }">
+      </div>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.4/dist/alpine.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src="assets/scripts/main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
+
 </html>

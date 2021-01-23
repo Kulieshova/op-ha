@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css'>
   <link rel="stylesheet" href="assets/styles/project.css">
-  <!-- <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode"> -->
+  <link rel="stylesheet" href="assets/styles/light-mode-user.css" id="light-mode">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="assets/pics/logo.png" type="image/png">
 
@@ -51,7 +51,7 @@
             </svg>
             My profile
           </a>
-          <a href="#">
+          <a href="settings.html">
             <ion-icon name="settings" style="margin-right: 15px;"></ion-icon>
             Settings
           </a>
@@ -110,6 +110,23 @@
           </a>
         </div>
       </div>
+      <div class="side-wrapper">
+        <div class="side-title">DONORS</div>
+        <div class="side-menu">
+          <a href="#">
+            <img src="assets/pics/USAID.png" style="width: 100%; height: auto;"/> 
+          </a>
+          <a href="#">
+            <img src="assets/pics/fond.png" style="width: 100%; height: auto;"/> 
+          </a>
+          <a href="#">
+            <img src="assets/pics/upshift.png" style="width: 100%; height: auto; margin-top: 10px;"/> 
+          </a>
+          <div style="display: block; width: 200px; word-break: break-all; margin-bottom: 20px;">
+            Цей сайт було створено за<br> підтримки Агенства США з<br> міжнародного розвитку (USAID). <br>Зміст сайту належить <br>виключно проєкту <br>"Opportunity Hacker" і не <br>обов'язково відображає<br> погляди USAID, уряду США та ГО<br> "Фонд 'Професйний розвиток <br>Харкова'"
+          </div>
+        </div>
+      </div>
       <a href="#" class="follow-me" target="_blank">
         <span class="follow-text">
           <img src="assets/emoji/heart.png" class="emoji-interests" style="margin-right: 5px;" />
@@ -134,15 +151,15 @@
       <div class="main-container">
         <div class="profile">
           <div class="profile-avatar">
-            <img src="assets/pics/users/hmc.png" alt="" class="profile-img">
-            <img src="assets/emoji/camera.png" id="camera-logo">
-            <div class="profile-name">HMC Project Ukraine
-              <h6 style="margin: 0px; font-weight: lighter;">HMC</h6>
+            <img src="data:image/png;base64,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" alt="" class="profile-img">
+            <!-- <img src="assets/emoji/camera.png" id="camera-logo"> -->
+            <div class="profile-name">UPSHIFT Ukraine
+              <!-- <h6 style="margin: 0px; font-weight: lighter;">UPSHIFT</h6> -->
             </div>
           </div>
-          <img src="https://amatravelinternal.blob.core.windows.net/articles/images/double-decker-london.jpg" alt=""
+          <img src="https://scontent.fdok1-1.fna.fbcdn.net/v/t1.0-9/78089084_802195396866662_226093933229244416_o.jpg?_nc_cat=105&_nc_sid=730e14&_nc_ohc=FwhiNrT6g0QAX8bn63E&_nc_ht=scontent.fdok1-1.fna&oh=2e0039797d43e6da09eb110558f6c48d&oe=5FB27FA9" alt=""
             class="profile-cover">
-            <img src="assets/emoji/camera.png" id="camera-bg">
+            <!-- <img src="assets/emoji/camera.png" id="camera-bg"> -->
           <div class="profile-menu">
             <!-- <a class="profile-menu-link active">Timeline</a>
           <a class="profile-menu-link">Photos</a> -->
@@ -170,7 +187,7 @@
               <div class="info">
                 <div class="info-item">
                   <img src="assets/emoji/dates.png" class="emoji-interests" />
-                  Year of founding <a href="#">1997</a>
+                  Year of founding <a href="#">2017</a>
                 </div>
 
                 <div class="info-item">
@@ -180,11 +197,11 @@
 
                 <div class="info-item">
                   <img src="assets/emoji/phone.png" class="emoji-interests" />
-                  Phone numner <a href="#">+380501234556</a>
+                  Phone <a href="#">+38 067 353 32 31</a>
                 </div>
                 <div class="info-item">
                   <img src="assets/emoji/email.png" class="emoji-interests" />
-                  Email <a href="#">flex@org.uk</a>
+                  Email <a href="#">upshiftukraine@gmail.com</a>
                 </div>
                 <div class="info-item">
                   <img src="assets/emoji/internet.png" class="emoji-interests" />
@@ -268,6 +285,65 @@
             </div>
           </div>
           <div class="timeline-right">
+            <div class="album box">
+              <div class="status-main">
+                <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"
+                  class="status-img" />
+                <div class="album-detail">
+                  <div class="album-title"><strong>HMC Project Ukraine</strong> at <span>London, UK</span></div>
+                  <div class="album-date">6 hours ago</div>
+                </div>
+                <button class="intro-menu"></button>
+              </div>
+              <div class="album-content">We are happy to announce that we opened our applications for Autumn 2021. So
+                excited to read yours!
+                <div class="album-photos">
+                  <img
+                    src="https://www.visitbritain.com/sites/default/files/styles/consumer_hero_image_mobile/public/consumer/paragraphs-bundles/image-banner/london_skyline_vb34141644_0.jpg?itok=RIwSzRW6"
+                    alt="" class="album-photo" />
+                  <div class="album-right">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0042/3981/8822/articles/Study-medicinea-abroad-in-england.jpg?v=1566559054"
+                      alt="" class="album-photo" />
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEmul28iMe2KtvuvjrwrFudB_r0Vq-QWk9_g&usqp=CAU"
+                      alt="" class="album-photo" />
+                  </div>
+                </div>
+              </div>
+              <div class="album-actions">
+                <div class="options">
+                  <span class="reactions" style="z-index: 999999999999999999;">
+                    <!-- <div class="icon-container">
+                    <span data-popup="Like" class="like reaction"></span>
+                  </div> -->
+                    <div class="icon-container">
+                      <span data-popup="Love" class="love reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Like" class="like reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Haha" class="haha reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Wow" class="wow reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Sad" class="sad reaction"></span>
+                    </div>
+                    <div class="icon-container">
+                      <span data-popup="Angry" class="angry reaction"></span>
+                    </div>
+                  </span>
+
+                  <span class="button">
+                    React
+                  </span>
+                </div>
+              </div>
+            </div>
+
             <div class="album box">
               <div class="status-main">
                 <img src="https://images.genius.com/2326b69829d58232a2521f09333da1b3.1000x1000x1.jpg"

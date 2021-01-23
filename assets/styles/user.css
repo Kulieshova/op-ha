@@ -304,6 +304,7 @@ body {
 }
 
 .profile-name {
+  text-align: center;
   margin-left: 24px;
   margin-bottom: 24px;
   font-size: 22px;
@@ -347,6 +348,7 @@ body {
 
 .intro {
   padding: 20px;
+  margin-bottom: 20px;
 }
 .intro-title {
   font-family: "DM Sans", sans-serif;
@@ -517,12 +519,13 @@ body {
 }
 
 .status-main {
-  padding: 0 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #272a3a;
   padding-bottom: 20px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .status-textarea {
@@ -532,7 +535,7 @@ body {
   resize: none;
   margin-top: 15px;
   color: #fff;
-  max-width: calc(100% - 70px);
+  width: 100%;
 }
 .status-textarea::placeholder {
   color: #5c5d71;
@@ -576,8 +579,7 @@ body {
 }
 
 .album {
-  padding-top: 20px;
-  margin-top: 20px;
+  margin: 0 0 20px 0 !important;
 }
 .album .status-main {
   border: none;
@@ -605,6 +607,7 @@ body {
 
 .album-content {
   padding: 0 20px 20px;
+  word-break: break-all;
 }
 
 .album-photo {
@@ -1154,7 +1157,7 @@ body {
 }
 
 .album:first-child{
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 786px) {
@@ -1164,4 +1167,22 @@ body {
 }
 .right-side, .right-side-button {
   display: none;
+}
+
+
+#camera-logo {
+  height: 30px; 
+  width: auto; 
+  position: relative; 
+  bottom: -50px; 
+  left: -40px;
+}
+
+@media screen and (max-width: 700px) {
+  #camera-logo{
+    height: 20px; 
+    width: auto; 
+    bottom: 25px; 
+    left: 30px;
+  }
 }
